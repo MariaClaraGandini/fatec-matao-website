@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Faculdade de Tecnologia de Matão, uma instituição pública Esadual de ensino superior de qualidade e gratuito!' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -26,6 +26,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+	{ src: '~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

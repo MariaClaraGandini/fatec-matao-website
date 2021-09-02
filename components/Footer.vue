@@ -5,11 +5,11 @@
 		</svg>
 
 		<footer class="container-fluid">
-			<div class="row text-left">
+			<div class="row text-center mb-2">
 				<article class="col-12 col-lg-4">
 					<ul class="list-unstyled">
 						<li>
-							<img src="" alt="Endereço">
+							<img src="../static/icons/map-marker-icon.svg" alt="Endereço" width="50">
 						</li>
 
 						<li v-for="item in addressItems" :key="item">
@@ -21,20 +21,7 @@
 				<article class="col-12 col-lg-4">
 					<ul class="list-unstyled">
 						<li>
-							<img src="" alt="Números de contato">
-						</li>
-
-						<li v-for="item in contactNumbersItems" :key="item">
-							<span class="label-style font-weight-bold">{{ item.label }}</span>
-							<span class="content-style">{{ item.number }}</span>
-						</li>
-					</ul>
-				</article>
-
-				<article class="col-12 col-lg-4">
-					<ul class="list-unstyled">
-						<li>
-							<img src="" alt="E-mails">
+							<img src="../static/icons/email-icon.svg" alt="E-mails" width="50">
 						</li>
 
 						<li v-for="item in emailItems" :key="item">
@@ -43,11 +30,48 @@
 						</li>
 					</ul>
 				</article>
+
+				<article class="col-12 col-lg-4">
+					<ul class="list-unstyled">
+						<li>
+							<img src="../static/icons/phone-icon.svg" alt="Números de contato" width="50">
+						</li>
+
+						<li v-for="item in contactNumbersItems" :key="item">
+							<span class="label-style font-weight-bold">{{ item.label }}</span>
+							<span class="content-style">{{ item.number }}</span>
+						</li>
+					</ul>
+				</article>
 			</div>
 
-			<div class="row py-2 copyright">
+			<hr>
+
+			<div class="row text-center">
+				<article class="col-12 mt-3 mb-5 d-flex justify-content-center">
+					<div class="p-3">
+						<a href="/">
+							<img src="../static/logos/fatec-white-logo.svg" alt="Fatec Matão" width="110">
+						</a>
+					</div>
+
+					<div class="p-3">
+						<a href="https://www.cps.sp.gov.br/">
+							<img src="../static/logos/cps-white-logo.svg" alt="Centro Paula Souza" width="90">
+						</a>
+					</div>
+
+					<div class="p-3">
+						<a href="https://www.saopaulo.sp.gov.br/">
+							<img src="../static/logos/gov-sp-logo.svg" alt="Governo do Estado de São Paulo" width="90">
+						</a>
+					</div>
+				</article>
+			</div>
+
+			<div class="row py-3 copyright text-center">
 				<article class="col-12">
-					<span class="text-white">Fatec Matão 2021 - Todos os direitos reservados.</span>
+					<span class="text-white">&copy; Fatec Matão 2021 - Todos os direitos reservados.</span>
 				</article>
 			</div>
 		</footer>
@@ -64,15 +88,15 @@ export default {
 				'CEP: 15990-539 - Matão/SP'
 			],
 
+			emailItems: [
+				{ label: 'Diretoria:', email: 'f297dir@cps.sp.gov.br' },
+				{ label: 'Administrativo:', email: 'f297adm@cps.sp.gov.br' },
+				{ label: 'Acadêmico:', email: 'f297acad@cps.sp.gov.br' }
+			],
+
 			contactNumbersItems: [
 				{ label: 'Telefone 1:', number: '(16) 3384-5847' },
 				{ label: 'Telefone 2:', number: '(16) 2016-2694' }
-			],
-
-			emailItems: [
-				{ label: 'Diretoria:', email: 'f297dir@cps.sp.gov.br' },
-				{ label: 'Diretoria Administrativa:', email: 'f297adm@cps.sp.gov.br' },
-				{ label: 'Serviço Acadêmico:', email: 'f297acad@cps.sp.gov.br' }
 			]
 		}
 	}
@@ -81,7 +105,7 @@ export default {
 
 <style scoped>
 	svg {
-		transform: translateY(2%);
+		transform: translateY(4%);
 	}
 
 	svg path {
@@ -97,6 +121,11 @@ export default {
 	}
 	.content-style {
 		color: var(--white-color);
+	}
+
+	hr {
+		border: 0.5px solid var(--white-color);
+		width: 70%;
 	}
 
 	.copyright {

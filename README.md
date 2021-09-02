@@ -1,3 +1,5 @@
+<img width="80" src="./static/logos/fatec-logo.svg" alt="Logo Fatec Matão">
+
 # Fatec Matão
 
 ### About
