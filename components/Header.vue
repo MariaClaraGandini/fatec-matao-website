@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<nav class="navbar navbar-expand-lg py-3">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
 			<section class="container">
 				<a href="/" class="navbar-brand">
 					<img
@@ -13,23 +13,22 @@
 				<button
 					class="navbar-toggler"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
+					data-toggle="collapse"
+					data-target="#navbarPrimary"
+					aria-controls="navbarPrimary"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon">
-						<img src="../static/icons/menu-icon.svg" alt="Menu" width="30">
-					</span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div id="navbarNav" class="collapse navbar-collapse justify-content-end">
-					<ul class="navbar-nav mt-2 mt-lg-0">
+				<div class="collapse navbar-collapse justify-content-end" id="navbarPrimary">
+					<ul class="navbar-nav">
 						<li class="nav-item" v-for="item in menuItems" :key="item">
 							<nuxt-link
-								class="nuxt-link text-decoration-none"
-								:to="item.url">
+								class="nav-link text-decoration-none"
+								:to="item.url"
+							>
 								{{ item.label }}
 							</nuxt-link>
 						</li>
@@ -56,19 +55,24 @@ export default {
 </script>
 
 <style scoped>
-	.navbar {
-		background-color: var(--white-color);
+	.bg-light {
+		background-color: var(--white-color) !important;
 	}
 
 	.nav-item {
 		margin-inline: 0.5rem;
+		width: -moz-fit-content;
+		width: fit-content;
 	}
 
-	.nuxt-link {
+	.nav-link {
 		color: var(--black-200-color);
 		font-size: 1.2rem;
 	}
-	.nuxt-link::after {
+	.nav-link:hover {
+		color: var(--black-color);
+	}
+	.nav-link::after {
 		background-color: var(--primary-color);
 		content: "";
 		display: block;
@@ -76,7 +80,7 @@ export default {
 		transition: 0.3s ease;
 		width: 0%;
 	}
-	.nuxt-link:hover::after {
+	.nav-link:hover::after {
 		transition: 0.3s ease;
 		width: 70%;
 	}
