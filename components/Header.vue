@@ -4,7 +4,7 @@
 			<section class="container">
 				<a href="/" class="navbar-brand">
 					<img
-					src="../assets/logos/fatec-logo.svg"
+					src="../static/logos/fatec-logo.svg"
 					alt="Fatec Matão"
 					width="120"
 					/>
