@@ -47,7 +47,8 @@ export default {
 				{ url: '/', label: 'Início' },
 				{ url: '/courses', label: 'Cursos' },
 				{ url: '/institutional', label: 'Institucional' },
-				{ url: '/services', label: 'Serviços' }
+				{ url: '/services', label: 'Serviços' },
+				{ url: '/ContactUs', label: 'Fale Conosco' }
 			]
 		}
 	}
