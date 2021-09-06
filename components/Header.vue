@@ -1,41 +1,27 @@
 <template>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-			<section class="container">
-				<a href="/" class="navbar-brand">
-					<img
-					src="../static/logos/fatec-logo.svg"
-					alt="Fatec Matão"
-					width="120"
-					/>
-				</a>
+		<b-navbar class="bg-light" toggleable="lg">
+			<b-container class="py-2">
+				<b-navbar-brand href="/">
+					<img src="../static/logos/fatec-logo.svg" alt="Fatec Matão" width="120">
+				</b-navbar-brand>
 
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarPrimary"
-					aria-controls="navbarPrimary"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-				<div class="collapse navbar-collapse justify-content-end" id="navbarPrimary">
-					<ul class="navbar-nav">
-						<li class="nav-item" v-for="item in menuItems" :key="item">
-							<nuxt-link
-								class="nav-link text-decoration-none"
-								:to="item.url"
-							>
-								{{ item.label }}
-							</nuxt-link>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</nav>
+				<b-collapse class="justify-content-end" id="nav-collapse" is-nav>
+					<b-navbar-nav>
+						<nuxt-link
+							class="nav-link"
+							v-for="menu in menuItems"
+							:key="menu"
+							:to="menu.url"
+						>
+							{{ menu.label }}
+						</nuxt-link>
+					</b-navbar-nav>
+				</b-collapse>
+			</b-container>
+		</b-navbar>
 	</header>
 </template>
 
@@ -44,11 +30,26 @@ export default {
 	data() {
 		return {
 			menuItems: [
-				{ url: '/', label: 'Início' },
-				{ url: '/courses', label: 'Cursos' },
-				{ url: '/institutional', label: 'Institucional' },
-				{ url: '/services', label: 'Serviços' },
-				{ url: '/ContactUs', label: 'Fale Conosco' }
+			{
+				url: "/",
+				label: "Início"
+			},
+			{
+				url: "/courses",
+				label: "Cursos"
+			},
+			{
+				url: "/services",
+				label: "Serviços"
+			},
+			{
+				url: "/institutional",
+				label: "Institucional"
+			},
+			{
+				url: "/contact",
+				label: "Contato"
+			}
 			]
 		}
 	}
@@ -57,10 +58,10 @@ export default {
 
 <style scoped>
 	.bg-light {
-		background-color: var(--white-color) !important;
+	background-color: var(--white-color) !important;
 	}
 
-	.nav-item {
+	.nav-link {
 		margin-inline: 0.5rem;
 		width: -moz-fit-content;
 		width: fit-content;

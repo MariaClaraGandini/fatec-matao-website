@@ -5,6 +5,8 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+a { text-decoration: none !important; }
+
 :root {
   --primary-color: #B01116;
   --secondary-color: #89000A;

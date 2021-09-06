@@ -5,50 +5,50 @@
 		</svg>
 
 		<footer class="container-fluid">
-			<div class="row text-center mb-2">
-				<article class="col-12 col-lg-4">
+			<b-row class="text-center mb-2">
+				<b-col cols="12" lg="4">
 					<ul class="list-unstyled">
 						<li>
 							<img src="../static/icons/map-marker-icon.svg" alt="Endereço" width="50">
 						</li>
 
-						<li v-for="item in addressItems" :key="item">
-							<span class="label-style">{{ item }}</span>
+						<li v-for="address in addressItems" :key="address">
+							<span class="label-style">{{ address }}</span>
 						</li>
 					</ul>
-				</article>
+				</b-col>
 
-				<article class="col-12 col-lg-4">
+				<b-col cols="12" lg="4">
 					<ul class="list-unstyled">
 						<li>
 							<img src="../static/icons/email-icon.svg" alt="E-mails" width="50">
 						</li>
 
-						<li v-for="item in emailItems" :key="item">
-							<span class="label-style font-weight-bold">{{ item.label }}</span>
-							<span class="content-style">{{ item.email}}</span>
+						<li v-for="email in emailItems" :key="email">
+							<span class="label-style font-weight-bold">{{ email.label }}</span>
+							<span class="content-style">{{ email.email}}</span>
 						</li>
 					</ul>
-				</article>
+				</b-col>
 
-				<article class="col-12 col-lg-4">
+				<b-col cols="12" lg="4">
 					<ul class="list-unstyled">
 						<li>
 							<img src="../static/icons/phone-icon.svg" alt="Números de contato" width="50">
 						</li>
 
-						<li v-for="item in contactNumbersItems" :key="item">
-							<span class="label-style font-weight-bold">{{ item.label }}</span>
-							<span class="content-style">{{ item.number }}</span>
+						<li v-for="contact in contactNumbersItems" :key="contact">
+							<span class="label-style font-weight-bold">{{ contact.label }}</span>
+							<span class="content-style">{{ contact.number }}</span>
 						</li>
 					</ul>
-				</article>
-			</div>
+				</b-col>
+			</b-row>
 
 			<hr>
 
-			<div class="row text-center">
-				<article class="col-12 mt-3 mb-5 d-flex justify-content-center">
+			<b-row class="text-center">
+				<b-col cols="12" class="mt-3 mb-5 d-flex justify-content-center">
 					<div class="p-3">
 						<a href="/">
 							<img src="../static/logos/fatec-white-logo.svg" alt="Fatec Matão" width="110">
@@ -66,14 +66,14 @@
 							<img src="../static/logos/gov-sp-logo.svg" alt="Governo do Estado de São Paulo" width="90">
 						</a>
 					</div>
-				</article>
-			</div>
+				</b-col>
+			</b-row>
 
-			<div class="row py-3 copyright text-center">
-				<article class="col-12">
+			<b-row class="py-3 text-center copyright">
+				<b-col cols="12">
 					<span class="text-white">&copy; Fatec Matão 2021 - Todos os direitos reservados.</span>
-				</article>
-			</div>
+				</b-col>
+			</b-row>
 		</footer>
 	</div>
 </template>
@@ -89,14 +89,29 @@ export default {
 			],
 
 			emailItems: [
-				{ label: 'Diretoria:', email: 'f297dir@cps.sp.gov.br' },
-				{ label: 'Administrativo:', email: 'f297adm@cps.sp.gov.br' },
-				{ label: 'Acadêmico:', email: 'f297acad@cps.sp.gov.br' }
+				{
+					label: 'Diretoria:',
+					email: 'f297dir@cps.sp.gov.br'
+				},
+				{
+					label: 'Administrativo:',
+					email: 'f297adm@cps.sp.gov.br'
+				},
+				{
+					label: 'Acadêmico:',
+					email: 'f297acad@cps.sp.gov.br'
+				}
 			],
 
 			contactNumbersItems: [
-				{ label: 'Telefone 1:', number: '(16) 3384-5847' },
-				{ label: 'Telefone 2:', number: '(16) 2016-2694' }
+				{
+					label: 'Telefone 1:',
+					number: '(16) 3384-5847'
+				},
+				{
+					label: 'Telefone 2:',
+					number: '(16) 2016-2694'
+				}
 			]
 		}
 	}

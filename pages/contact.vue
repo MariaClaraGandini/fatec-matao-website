@@ -1,7 +1,9 @@
 <template>
 	<div>
 		<Header />
-        <MainContactUs />
+
+        <Contact />
+
 		<Footer />
 	</div>
 </template>
