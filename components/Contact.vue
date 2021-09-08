@@ -22,7 +22,7 @@ export default {
         name: "",
       },
 
-      
+
 
       methods: {
         onSubmit(event) {
@@ -106,7 +106,7 @@ export default {
           id="input-group-2"
           label="Nome:"
           label-for="input-2"
-          description="Como podemos te chamar ?"
+          description="Como podemos te chamar?"
         >
           <b-form-input
             id="input-2"
@@ -118,21 +118,21 @@ export default {
 
         <b-form-textarea
           id="textarea-rows"
-          placeholder="Qual sua duvida ?"
+          placeholder="Qual sua dúvida?"
           rows="8"
           required
           validated=true
         ></b-form-textarea>
         <b-button type="submit" variant="outline-danger" class="button-submit"
-          >Submit</b-button
+          >Enviar</b-button
         >
         <b-button type="reset" variant="outline-dark" class="button-reset"
-          >Reset</b-button
+          >Limpar</b-button
         >
         <!-- <b-alert variant="success" show>Success Alert</b-alert> -->
-        
+
         <div class="avalicao">
-          <p>Poderia avaliar nosso formulario de contato ?</p>
+          <p>Poderia avaliar nosso formulário de contato?</p>
           <div>
             <b-form-rating v-model="value" class="avaliacao"></b-form-rating>
           </div>

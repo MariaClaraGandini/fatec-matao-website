@@ -22,7 +22,7 @@
 							</p>
 
 							<div>
-								<a href="" class="link-one">
+								<a href="https://www.vestibularfatec.com.br/home/" target="_blank" class="link-one">
 									Vestibular
 								</a>
 
@@ -49,8 +49,7 @@
 				v-model="slide"
 				:interval="4000"
 				controls
-				background="#ababab"
-				img-width="1024"
+				background="#B01116"
 				img-height="500"
 				style="text-shadow: 1px 1px 2px #333;"
 				@sliding-start="onSlideStart"
@@ -59,10 +58,9 @@
 				<b-carousel-slide>
 					<template #img>
 					<img
-						class="d-block img-fluid w-100"
-						width="1024"
+						class="d-block img-fluid mx-auto"
 						height="500"
-						src="https://picsum.photos/1024/480/?image=55"
+						src="../static/images/fatec-image-1.jpg"
 						alt="image slot"
 					>
 					</template>
@@ -71,15 +69,148 @@
 				<b-carousel-slide>
 					<template #img>
 					<img
-						class="d-block img-fluid w-100"
-						width="1024"
+						class="d-block img-fluid mx-auto"
 						height="500"
-						src="https://picsum.photos/1024/480/?image=55"
+						src="../static/images/fatec-image-1.jpg"
 						alt="image slot"
 					>
 					</template>
 				</b-carousel-slide>
     		</b-carousel>
+
+			<b-container class="py-4">
+				<b-row class="text-center">
+					<b-col cols="12">
+						<h2 class="subtitle-style">
+							Objetivos
+						</h2>
+
+						<hr class="hr-style mt-3">
+
+						<p class="description-style">
+							Conheça um pouco de nossa conduta, <br>
+							em relação ao nosso ensino
+						</p>
+					</b-col>
+				</b-row>
+
+				<b-row class="text-center mt-3">
+					<b-col cols="12" lg="4">
+						<div class="m-3">
+							<img src="../static/icons/graduation-icon.svg" alt="Graduação" width="90">
+
+							<p class="mt-3">
+								Formar profissionais <br>
+								em diversas áreas do <br>
+								conhecimento
+							</p>
+						</div>
+					</b-col>
+
+					<b-col cols="12" lg="4">
+						<div class="m-3">
+							<img src="../static/icons/brain-icon.svg" alt="Graduação" width="90">
+
+							<p class="mt-3">
+								Estimular continuamente <br>
+								o conhecimento <br>
+								tecnológico
+							</p>
+						</div>
+					</b-col>
+
+					<b-col cols="12" lg="4">
+						<div class="m-3">
+							<img src="../static/icons/search-icon.svg" alt="Graduação" width="90">
+
+							<p class="mt-3">
+								Produzir o <br>
+								desenvolvimento <br>
+								científico
+							</p>
+						</div>
+					</b-col>
+				</b-row>
+			</b-container>
+
+			<b-container class="py-4">
+				<b-row class="text-center">
+					<b-col cols="12">
+						<h2 class="subtitle-style">
+							Notícias
+						</h2>
+
+						<hr class="hr-style mt-3">
+
+						<p class="description-style">
+							Acompanhe algumas notícias <br>
+							sobre nossa instituição
+						</p>
+					</b-col>
+				</b-row>
+
+				<b-row>
+					<b-col cols="12" lg="4">
+						<b-card
+							title="Prefeitura apresenta área de 21 mil metros quadrados para instalações da Fatec"
+							img-src="../static/news/news-1.jpg"
+							img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
+							img-top
+							tag="article"
+							style="max-width: 20rem; border: 1px solid #222"
+							class="my-3 mx-auto"
+						>
+							<div class="d-flex align-items-center justify-content-between">
+								<b-link href="#" class="card-link">Acessar</b-link>
+
+								<span class="font-weight-normal">
+									23/07/2021
+								</span>
+							</div>
+						</b-card>
+					</b-col>
+
+					<b-col cols="12" lg="4">
+						<b-card
+							title="Prefeitura apresenta área de 21 mil metros quadrados para instalações da Fatec"
+							img-src="../static/news/news-1.jpg"
+							img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
+							img-top
+							tag="article"
+							style="max-width: 20rem; border: 1px solid #222"
+							class="my-3 mx-auto"
+						>
+							<div class="d-flex align-items-center justify-content-between">
+								<b-link href="#" class="card-link">Acessar</b-link>
+
+								<span class="font-weight-normal">
+									23/07/2021
+								</span>
+							</div>
+						</b-card>
+					</b-col>
+
+					<b-col cols="12" lg="4">
+						<b-card
+							title="Prefeitura apresenta área de 21 mil metros quadrados para instalações da Fatec"
+							img-src="../static/news/news-1.jpg"
+							img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
+							img-top
+							tag="article"
+							style="max-width: 20rem; border: 1px solid #222"
+							class="my-3 mx-auto"
+						>
+							<div class="d-flex align-items-center justify-content-between">
+								<b-link href="#" class="card-link">Acessar</b-link>
+
+								<span class="font-weight-normal">
+									23/07/2021
+								</span>
+							</div>
+						</b-card>
+					</b-col>
+				</b-row>
+			</b-container>
 		</main>
 
 		<Footer />
@@ -145,5 +276,18 @@ methods: {
 		color: var(--primary-color);
 		font-weight: 500;
 		padding: 5px 20px;
+	}
+
+	h4.card-title {
+		color: var(--secondary-color);
+		font-size: 1.1rem !important;
+	}
+
+	.card-link {
+		background-color: var(--black-200-color);
+		font-size: 0.95rem;
+		border-radius: 3px;
+		color: var(--white-color);
+		padding: 5px 10px;
 	}
 </style>
