@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  ssr: 'false',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -13,7 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Faculdade de Tecnologia de Matão, uma instituição pública Estadual de ensino superior de qualidade e gratuito!' },
       { name: 'format-detection', content: 'telephone=no' },
-	  { name: 'theme-color', content: '#B01116' }
+	    { name: 'theme-color', content: '#B01116' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: './static/favicon/favicon.svg' }
