@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  ssr: 'false',
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -16,7 +16,7 @@ export default {
 	    { name: 'theme-color', content: '#B01116' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './static/favicon/favicon.svg' }
+      { rel: 'icon', type: 'image/x-icon', href: '~/static/favicon/favicon.svg' }
     ]
   },
 
