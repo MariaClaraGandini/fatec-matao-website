@@ -58,7 +58,7 @@ export default {
 
 <style scoped>
 	.bg-light {
-	background-color: var(--white-color) !important;
+		background-color: var(--white-color) !important;
 	}
 
 	.nav-link {
@@ -79,11 +79,11 @@ export default {
 		content: "";
 		display: block;
 		height: 2px;
-		transition: 0.3s ease;
+		transition: 0.6s ease;
 		width: 0%;
 	}
 	.nav-link:hover::after {
-		transition: 0.3s ease;
+		transition: 0.6s ease;
 		width: 70%;
 	}
 </style>

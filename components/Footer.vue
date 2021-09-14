@@ -48,20 +48,20 @@
 			<hr>
 
 			<b-row class="text-center">
-				<b-col cols="12" class="mt-3 mb-5 d-flex justify-content-center">
-					<div class="p-3">
+				<b-col cols="12" class="mt-3 mb-5 d-flex flex-wrap justify-content-center">
+					<div class="p-4">
 						<a href="/">
 							<img src="../static/logos/fatec-white-logo.svg" alt="Fatec Matão" width="110">
 						</a>
 					</div>
 
-					<div class="p-3">
+					<div class="p-4">
 						<a href="https://www.cps.sp.gov.br/">
 							<img src="../static/logos/cps-white-logo.svg" alt="Centro Paula Souza" width="90">
 						</a>
 					</div>
 
-					<div class="p-3">
+					<div class="p-4">
 						<a href="https://www.saopaulo.sp.gov.br/">
 							<img src="../static/logos/gov-sp-logo.svg" alt="Governo do Estado de São Paulo" width="90">
 						</a>

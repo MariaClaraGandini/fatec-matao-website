@@ -33,7 +33,7 @@
 						</div>
 					</b-col>
 
-					<b-col cols="12" lg="6" class="d-flex align-items-center justify-content-center py-3">
+					<b-col cols="12" lg="6" class="d-flex align-items-center justify-content-center py-4">
 						<img
 							class="img-fluid"
 							src="../static/images/man-image.png"
@@ -241,7 +241,7 @@ methods: {
 <style scoped>
 	h1 {
 		color: var(--black-200-color);
-		font-size: 3.5rem;
+		font-size: clamp(2.45rem, 5vw - 0.5rem, 3.5rem);
 		font-weight: 700;
 	}
 
