@@ -8,7 +8,11 @@
 
 <script>
 export default {
-
+	head() {
+		return {
+			title: 'Fatec Matão | Cursos'
+		}
+	}
 }
 </script>
 

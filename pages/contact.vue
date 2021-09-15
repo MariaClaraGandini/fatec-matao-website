@@ -10,10 +10,10 @@
 
 <script>
 export default {
-
+	head() {
+		return {
+			title: 'Fatec Matão | Contato'
+		}
+	}
 }
 </script>
-
-<style scoped>
-
-</style>

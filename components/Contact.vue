@@ -22,8 +22,6 @@ export default {
         name: "",
       },
 
-
-
       methods: {
         onSubmit(event) {
           event.preventDefault();
@@ -74,7 +72,7 @@ export default {
     <hr />
     <div class="avisos">
       <div class="textAvisos">
-        <p class="p1">Devido a pendemia estamos em teletrabalho</p>
+        <p class="p1">Devido a pandemia estamos em teletrabalho</p>
         <p class="p1">Não atendemos por telefone, encaminhe um e-mail para:</p>
         <p class="p3" v-for="email in emailItems" :key="email">
           {{ email.label }} {{ email.email }}
@@ -153,44 +151,44 @@ strong {
 }
 
 hr {
-  border: 0;
-  height: 2px;
   background-image: linear-gradient(
-    to right,
+	  to right,
     transparent,
     var(--secondary-color),
     transparent
   );
+  border: 0;
+  height: 2px;
 }
 
 .avisos {
   /* background-color: var(--secondary-color); */
   color: black;
-  width: 100%;
   height: 280px;
   text-align: center;
+  width: 100%;
 }
 
 .p1 {
+  color: #151515;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   margin-left: 25px;
   padding-top: 12px;
-  font-family: "Poppins", sans-serif;
-  color: #151515;
-  font-weight: 700;
 }
 
 .p2 {
-  margin-left: 25px;
   font-family: "Poppins", sans-serif;
+  margin-left: 25px;
   padding-top: 12px;
 }
 
 .p3 {
-  margin-left: 25px;
-  font-family: "Poppins", sans-serif;
-  padding-top: 12px;
-  font-weight: 700;
   color: #151515;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-left: 25px;
+  padding-top: 12px;
 }
 
 .container-form {

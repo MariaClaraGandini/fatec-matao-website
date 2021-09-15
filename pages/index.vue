@@ -36,9 +36,9 @@
 					<b-col cols="12" lg="6" class="d-flex align-items-center justify-content-center py-4">
 						<img
 							class="img-fluid"
+							height="300"
 							src="../static/images/man-image.png"
 							alt="Estudante fatecano"
-							height="300"
 						>
 					</b-col>
 				</b-row>
@@ -49,31 +49,34 @@
 				v-model="slide"
 				:interval="4000"
 				controls
-				background="#B01116"
-				img-height="500"
+				background="#F1F1F1"
+				img-height="450"
+				img-width="1920"
 				style="text-shadow: 1px 1px 2px #333;"
 				@sliding-start="onSlideStart"
 				@sliding-end="onSlideEnd"
 			>
 				<b-carousel-slide>
 					<template #img>
-					<img
-						class="d-block img-fluid mx-auto"
-						height="500"
-						src="../static/images/fatec-image-1.jpg"
-						alt="image slot"
-					>
+						<img
+							class="d-block img-fluid mx-auto"
+							height="450"
+							width="1920"
+							src="../static/images/banner-vestibular.jpg"
+							alt="Inscrições abertas para o vestibular da Fatec Matão"
+						>
 					</template>
 				</b-carousel-slide>
 
 				<b-carousel-slide>
 					<template #img>
-					<img
-						class="d-block img-fluid mx-auto"
-						height="500"
-						src="../static/images/fatec-image-1.jpg"
-						alt="image slot"
-					>
+						<img
+							class="d-block img-fluid mx-auto"
+							height="450"
+							width="1920"
+							src="../static/images/banner-vestibular.jpg"
+							alt="Inscrições abertas para o vestibular da Fatec Matão"
+						>
 					</template>
 				</b-carousel-slide>
     		</b-carousel>
@@ -152,19 +155,21 @@
 				<b-row>
 					<b-col cols="12" lg="4">
 						<b-card
-							title="Prefeitura apresenta área de 21 mil metros quadrados para instalações da Fatec"
+							title="Fatec Matão - Projetando o fututo (YouTube)"
 							img-src="../static/news/news-1.jpg"
-							img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
+							img-alt="Fatec - Projetando o futuro"
 							img-top
 							tag="article"
 							style="max-width: 20rem; border: 1px solid #222"
 							class="my-3 mx-auto"
 						>
 							<div class="d-flex align-items-center justify-content-between">
-								<b-link href="#" class="card-link">Acessar</b-link>
+								<b-link href="https://www.youtube.com/watch?v=Arc5V_RAEH0" target="_blank" rel="noopener noreferrer" class="card-link">
+									Acessar
+								</b-link>
 
 								<span class="font-weight-normal">
-									23/07/2021
+									13/09/2021
 								</span>
 							</div>
 						</b-card>
@@ -172,19 +177,21 @@
 
 					<b-col cols="12" lg="4">
 						<b-card
-							title="Prefeitura apresenta área de 21 mil metros quadrados para instalações da Fatec"
-							img-src="../static/news/news-1.jpg"
-							img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
+							title="Câmara aprova doações de áreas para Senai e Fatec"
+							img-src="../static/news/news-2.jpg"
+							img-alt="Câmara aprova doações de áreas para Senai e Fatec"
 							img-top
 							tag="article"
 							style="max-width: 20rem; border: 1px solid #222"
 							class="my-3 mx-auto"
 						>
 							<div class="d-flex align-items-center justify-content-between">
-								<b-link href="#" class="card-link">Acessar</b-link>
+								<b-link href="http://www.acomarcanet.com.br/materia.php?id_materia=6686&fbclid=IwAR2Lw4JIjAhiSh1Ob_FNum8y_beE--bcTemsVLtj6Wi1PHnVZcwgCDVp70g" target="_blank" rel="noopener noreferrer" class="card-link">
+									Acessar
+								</b-link>
 
 								<span class="font-weight-normal">
-									23/07/2021
+									10/09/2021
 								</span>
 							</div>
 						</b-card>
@@ -192,8 +199,8 @@
 
 					<b-col cols="12" lg="4">
 						<b-card
-							title="Prefeitura apresenta área de 21 mil metros quadrados para instalações da Fatec"
-							img-src="../static/news/news-1.jpg"
+							title="Prefeitura apresenta área de 21 mil m² para instalações da Fatec"
+							img-src="../static/news/news-3.jpg"
 							img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
 							img-top
 							tag="article"
@@ -201,7 +208,9 @@
 							class="my-3 mx-auto"
 						>
 							<div class="d-flex align-items-center justify-content-between">
-								<b-link href="#" class="card-link">Acessar</b-link>
+								<b-link href="http://novo.matao.sp.gov.br/prefeitura-apresenta-area-de-21-mil-metros-quadrados-para-futuras-instalacoes-da-fatec-matao/" target="_blank" rel="noopener noreferrer" class="card-link">
+									Acessar
+								</b-link>
 
 								<span class="font-weight-normal">
 									23/07/2021
@@ -219,22 +228,28 @@
 
 <script>
 export default {
-data() {
-	return {
-		slide: 0,
-		sliding: null
-	}
-},
-
-methods: {
-	onSlideStart(slide) {
-		this.sliding = true
+	data() {
+		return {
+			slide: 0,
+			sliding: null
+		}
 	},
 
-	onSlideEnd(slide) {
-		this.sliding = false
+	head() {
+		return {
+			title: 'Fatec Matão | Início'
+		}
+	},
+
+	methods: {
+		onSlideStart(slide) {
+			this.sliding = true
+		},
+
+		onSlideEnd(slide) {
+			this.sliding = false
+		}
 	}
-}
 }
 </script>
 
@@ -278,16 +293,21 @@ methods: {
 		padding: 5px 20px;
 	}
 
+	div.card-body {
+		padding-inline: 15px;
+	}
+
 	h4.card-title {
 		color: var(--secondary-color);
-		font-size: 1.1rem !important;
+		font-size: 1.05rem !important;
+		line-height: 1.5;
 	}
 
 	.card-link {
 		background-color: var(--black-200-color);
-		font-size: 0.95rem;
 		border-radius: 3px;
 		color: var(--white-color);
+		font-size: 0.95rem;
 		padding: 5px 10px;
 	}
 </style>

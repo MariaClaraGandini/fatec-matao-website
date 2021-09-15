@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 
+:root {
+	--primary-color: #B01116;
+	--secondary-color: #89000A;
+	--black-color: #000;
+	--black-200-color: #222222;
+	--gray-color: #F9F9F9;
+	--white-color: #FFF;
+}
+
 body {
 	background-color: var(--gray-color);
 	font-family: 'Poppins', sans-serif;
@@ -23,13 +32,4 @@ a {
 	color: var(--black-color);
 	font-size: 1.25rem;
 	font-weight: 500;
-}
-
-:root {
-  --primary-color: #B01116;
-  --secondary-color: #89000A;
-  --black-color: #000;
-  --black-200-color: #222222;
-  --gray-color: #F9F9F9;
-  --white-color: #FFF;
 }
