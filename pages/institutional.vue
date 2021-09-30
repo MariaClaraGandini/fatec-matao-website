@@ -68,10 +68,45 @@
 							</p>
 						</div>
 					</b-col>
-				</b-row>
-			</b-container>   
+				</b-row>  
+			<b-carousel
+				class="m-5"
+				id="carousel-1"
+				v-model="slide"
+				:interval="4000"
+				controls
+				background="#F1F1F1"
+				img-height="450"
+				img-width="1920"
+				style="text-shadow: 1px 1px 2px #333;"
+				@sliding-start="onSlideStart"
+				@sliding-end="onSlideEnd"
+			>
+				<b-carousel-slide>
+					<template #img>
+						<img
+							class="d-block img-fluid mx-auto"
+							height="300"
+							width="1400"
+							src="../static/images/fatec-image-1.jpg"
+							alt="Foto da Instituição Fatec, unidade de Matão"
+						>
+					</template>
+				</b-carousel-slide>
 
-
+				<b-carousel-slide>
+					<template #img>
+						<img
+							class="d-block img-fluid mx-auto"
+							height="300"
+							width="1400"
+							src="../static/images/fatec-image-1.jpg"
+							alt="Foto da Instituição Fatec, unidade de Matão"
+						>
+					</template>
+				</b-carousel-slide>
+    		</b-carousel>
+		</b-container>
 		<Footer />
 	</main>
 </template>
@@ -97,3 +132,4 @@ export default {
 	}
 	
 </style>
+
