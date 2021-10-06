@@ -40,18 +40,21 @@
     <!-- Form -->
 
     <div class="container-form">
-      <b-form @submit="onSubmit" @reset="onReset">
+      <!-- <div class="art"></div> -->
+      <b-form @submit="onSubmit" @reset="onReset" class="form-align color-text">
         <b-form-group
           id="input-group-1"
           label="Email:"
           label-for="input-1"
           description="Nunca compartilharemos seu e-mail com mais ninguém."
+
         >
           <b-form-input
             id="input-1"
             v-model="a"
             type="email"
             placeholder="Digite seu email"
+            class="color-input"
             required
           ></b-form-input>
         </b-form-group>
@@ -66,6 +69,7 @@
             id="input-2"
             v-model="a"
             placeholder="Digite seu nome"
+            class="color-input"
             required
           ></b-form-input>
         </b-form-group>
@@ -76,6 +80,7 @@
           rows="8"
           required
           validated="true"
+          class="color-input"
         ></b-form-textarea>
         <b-button type="submit" variant="outline-danger" class="button-submit"
           >Enviar</b-button
@@ -84,13 +89,6 @@
           >Limpar</b-button
         >
         <!-- <b-alert variant="success" show>Success Alert</b-alert> -->
-
-        <div class="avalicao">
-          <p>Poderia avaliar nosso formulário de contato?</p>
-          <div>
-            <b-form-rating v-model="value" class="avaliacao"></b-form-rating>
-          </div>
-        </div>
       </b-form>
     </div>
   </main>
@@ -147,7 +145,7 @@ export default {
 </script>
 
 <style scoped>
-h2 {
+h1 {
   margin-top: 15px;
   text-align: center;
 }
@@ -199,15 +197,36 @@ hr {
 
 .container-form {
   border-radius: 10px;
-  padding: 20px;
-  background-color: var(--gray-color);
+  background-color: #3e0204;
+  background-image: url(~/assets/img/Group.svg);
   margin: 0 auto;
   margin-top: 100px;
   width: 80%;
-  height: 720px;
+  height: 600px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+.form-align{
+  margin: 0 auto;
+  margin-top: 27px;
+}
+
+.color-text{
+  color: #FFF;
+}
+
+.color-input{
+  background-color: #f4f3ee;
+  color: #000;
+  border-color: none;
+  border-radius: 15px;
 }
 
 .button-submit {
