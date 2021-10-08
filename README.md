@@ -1,3 +1,5 @@
+<img src="./static/logos/fatec-logo.svg" alt="Logo Fatec Matão" title="Logo Fatec Matão" width="80">
+
 # Fatec Matão
 
 ### About
@@ -5,14 +7,13 @@ Fatec Matão's website is a non-profit project, developed by Fatec Taquaritinga 
 
 ### Technologies
 - Bootstrap 4.6
-- Vue.js 2.6
+- Vue.js 2
 - Nuxt.js 2.15.8
 
 ### Integrations
 - **BootstrapVue**: With BootstrapVue you can build responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library. (https://bootstrap-vue.org/)
 
 ### Team
-- Igor Angelo
 - Maria Gandini
 - Mariana Lourenço
 - Ryan Oliveira
