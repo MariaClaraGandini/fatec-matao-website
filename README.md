@@ -6,6 +6,7 @@
 Fatec Matão's website is a non-profit project, developed by Fatec Taquaritinga students, during the Integrator Project II class.
 
 ### Technologies
+- HTML 5
 - Bootstrap 4.6
 - Vue.js 2
 - Nuxt.js 2.15.8
