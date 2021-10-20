@@ -71,11 +71,13 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block img-fluid mx-auto"
+            src="../static/images/banner-vestibular.jpg"
+            alt="Inscrições abertas para o vestibular"
+            title="Inscrições abertas para o vestibular"
+            draggable="false"
             height="450"
             width="1920"
-            src="../static/images/banner-vestibular.jpg"
-            alt="Inscrições abertas para o vestibular da Fatec Matão"
+            class="d-block img-fluid mx-auto"
           />
         </template>
       </b-carousel-slide>
@@ -83,11 +85,13 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block img-fluid mx-auto"
+            src="../static/images/banner-redes.jpg"
+            alt="Nos acompanhe nas redes"
+            title="Nos acompanhe nas redes"
+            draggable="false"
             height="450"
             width="1920"
-            src="../static/images/banner-vestibular.jpg"
-            alt="Inscrições abertas para o vestibular da Fatec Matão"
+            class="d-block img-fluid mx-auto"
           />
         </template>
       </b-carousel-slide>

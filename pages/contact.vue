@@ -9,8 +9,7 @@
     </div>
     <h1>
       Acompanhe a
-      <strong
-        >Fatec Matão:
+      <strong>Fatec Matão:
         <a href="https://www.facebook.com/fatecmatao">
           <img src="../static/icons/icons8-facebook.svg" alt="Facebook" />
         </a>
@@ -46,8 +45,6 @@
           id="input-group-1"
           label="Email:"
           label-for="input-1"
-          description="Nunca compartilharemos seu e-mail com mais ninguém."
-
         >
           <b-form-input
             id="input-1"
@@ -63,7 +60,6 @@
           id="input-group-2"
           label="Nome:"
           label-for="input-2"
-          description="Como podemos te chamar?"
         >
           <b-form-input
             id="input-2"
@@ -201,15 +197,16 @@ hr {
   background-image: url(~/assets/img/Group.svg);
   margin: 0 auto;
   margin-top: 100px;
-  width: 80%;
-  height: 600px;
+  max-width: 500px;
+  width: 100%;
+  padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 
@@ -232,7 +229,7 @@ hr {
 .button-submit {
   margin-top: 20px;
   margin-right: 20px;
-  background-color: var(--secondary-color);
+  background-color: #4FB34F;
   color: var(--white-color);
   border-color: transparent;
 }
