@@ -117,6 +117,8 @@
             <img
               src="../static/icons/graduation-icon.svg"
               alt="Graduação"
+              title="Graduação"
+              draggable="false"
               width="90"
             />
 
@@ -132,7 +134,9 @@
           <div class="m-3">
             <img
               src="../static/icons/brain-icon.svg"
-              alt="Graduação"
+              alt="Conhecimento"
+              title="Conhecimento"
+              draggable="false"
               width="90"
             />
 
@@ -148,7 +152,9 @@
           <div class="m-3">
             <img
               src="../static/icons/search-icon.svg"
-              alt="Graduação"
+              alt="Pesquisa"
+              title="Pesquisa"
+              draggable="false"
               width="90"
             />
 
