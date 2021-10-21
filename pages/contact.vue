@@ -254,4 +254,40 @@ hr {
   color: #151515;
   font-weight: 700;
 }
+
+@media (min-width: 320px) { 
+
+  .avisos{
+    height: 350px;
+  }
+
+  .container-form{
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 375px) { 
+
+  .avisos{
+    height: 350px;
+  }
+
+  .container-form{
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 414px) { 
+
+  .avisos{
+    height: 350px;
+  }
+
+  .container-form{
+    width: 80%;
+  }
+
+}
 </style>
