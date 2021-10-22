@@ -1,158 +1,185 @@
 <template>
   <main>
-    <b-card class="form-card">
-      <b-card-text class="curses-style"> Tecnólogo em Alimentos </b-card-text>
-    </b-card>
+    <h1 class="text-center h1 font-weight-bold mx-2 mt-5 mb-3">
+      Conheça nossos cursos superiores
+    </h1>
 
-    <b-container class="py-4">
-      <b-row class="text-center">
-        <b-col cols="12">
-          <h2 class="subtitle-style">Áreas de Atuação</h2>
+    <p class="text-center mb-5">
+      Estude em uma <strong>faculdade pública</strong> de <strong>qualidade</strong> e <strong>credibilidade</strong>.
+    </p>
 
-          <hr class="hr-curses mt-3" />
+    <div class="d-flex flex-wrap align-items-center justify-content-center">
+      <article class="card food-background flex flex-column justify-content-around mx-3 my-3 p-2" title="Curso de Alimentos">
+        <h2 class="food-title h3 text-center mx-auto p-3 rounded-sm">
+          Alimentos
+        </h2>
 
-          <p class="description">
-            O Tecnólogo em Alimentos, desenvolve tecnologia para produtos
-            cárneos, lácteos, frutas, fermentados e destilados, aborda matérias
-            fundamentais como química, bioquímica e nutrição, além de ensinar
-            todo o processo industrial, embalagem e conserva. <br />
-            O aluno vai estar apto para planejar e gerenciar uma equipe, definir
-            o tempo de exposição do alimento, aprender boas práticas de
-            fabricação como: vestimenta, equipamento e higienização correta,
-            também pode atuar em laboratórios, pesquisando características,
-            matérias-primas e produtos. <br />
-            - Duração: 6 semestres. <br />
-            - Período: matutino e noturno.<br />
-            - Vagas: 40 vagas por período.
-          </p>
-        </b-col>
-      </b-row>
-    </b-container>
+        <figure class="card-figure mx-auto">
+          <img
+            src="../static/courses/food.svg"
+            alt="Alimentos"
+            title="Alimentos"
+            draggable="false"
+            width="70"
+            height="70"
+          >
+        </figure>
 
-    <b-container class="py-0">
-      <b-row class="text-center">
-        <b-col cols="12">
-          <h2 class="subtitle-style">Perfil Do Profissional</h2>
+        <nuxt-link to="/course-food" class="see-more-btn text-center food-btn mx-auto p-3 rounded-sm" title="Saiba mais">
+          Saiba mais
+        </nuxt-link>
+      </article>
 
-          <hr class="hr-curses mt-3" />
+      <article class="card agro-processes-background flex flex-column justify-content-around mx-3 my-3 p-2" title="Curso Análise de Processos Agroindustriais">
+        <h2 class="agro-processes-title h3 text-center mx-auto p-3 rounded-sm">
+          Análise de Processos Agroindustriais
+        </h2>
 
-          <p class="description">
-            O profissional de Alimentos pode atuar em redes de supermercados,
-            usinas de cana-de-açúcar, fábricas de conserva, frigoríficos,
-            indústrias alimentícias, assim como empreender abrindo um comércio.
-          </p>
+        <figure class="card-figure mx-auto">
+          <img
+            src="../static/courses/agro.svg"
+            alt="Análise de Processos Agroindustriais"
+            title="Análise de Processos Agroindustriais"
+            draggable="false"
+            width="70"
+            height="70"
+          >
+        </figure>
 
-          <div class="mt-3">
-            <b-card
-              img-src="https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390_960_720.jpg"
-              img-alt="Card image"
-              img-left
-              class="mb-0"
-              style="width: 200px; height: 180px"
-            >
-              <b-card-text>
-                <p class="description-class">
-                  <b>Coordenador do curso </b><br />
-                  Prof. usuario do curso <br />
-                  <b>Email do coordenador </b><br />
-                  usuariodocurso@fatec.sp.gov.br
-                </p>
-                <a href="#" target="_blank" class="link-one"> Grade </a>
-                <a href="#" target="_blank" class="link-one"> horário </a>
-              </b-card-text>
-            </b-card>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
+        <nuxt-link to="/course-agro-processes" class="see-more-btn agro-processes-btn text-center mx-auto p-3 rounded-sm" title="Saiba mais">
+          Saiba mais
+        </nuxt-link>
+      </article>
+
+      <article class="card big-data-background flex flex-column justify-content-around mx-3 my-3 p-2" title="Curso Big Data no Agronegócio">
+        <h2 class="big-data-title h3 text-center mx-auto p-3 rounded-sm">
+          Big Data no Agronegócio
+        </h2>
+
+        <figure class="card-figure mx-auto">
+          <img
+            src="../static/courses/data.svg"
+            alt="Big Data no Agronegócio"
+            title="Big Data no Agronegócio"
+            draggable="false"
+            width="70"
+            height="70"
+          >
+        </figure>
+
+        <nuxt-link to="/course-big-data" class="see-more-btn big-data-btn text-center mx-auto p-3 rounded-sm" title="Saiba mais">
+          Saiba mais
+        </nuxt-link>
+      </article>
+    </div>
   </main>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      slide: 0,
-      sliding: null,
-    };
-  },
-
-  head() {
-    return {
-      title: "Fatec Matão | Cursos",
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!'
-        },
-
-        // Open Graph
-        { property: 'og:title', content: 'Fatec Matão | Cursos' },
-        { property: 'og:site_name', content: 'Fatec Matão | Cursos' },
-        { property: 'og:description', content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!' }
-      ]
-    };
-  },
-
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
-  },
-};
-</script>
-
 <style scoped>
-p.description {
-  color: var(--black-200-color);
-  font-size: 1.1rem;
-  text-align: justify;
-}
+  h1,
+  h2 {
+    cursor: default;
+  }
 
-p.description span {
-  color: var(--secondary-color);
-  font-weight: 500;
-  text-align: justify;
-}
+  h1,
+  strong {
+    color: var(--primary-color);
+  }
 
-.description-class {
-  font-weight: 500;
-  text-align: justify;
-  color: var(--black-200-color);
-  font-size: 1.2rem;
-  margin-top: -18px;
-}
+  h2 {
+    background: var(--white-color);
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 
-.form-card {
-  background: var(--secondary-color);
-  font-weight: 10;
-}
+  .card {
+    background-position: center;
+    background-size: cover;
+    border: none;
+    height: 400px;
+    max-width: 400px;
+    transition: 0.3s ease;
+    width: 100%;
+  }
 
-.curses-style {
-  color: var(--white-color);
-  font-size: 2.5rem;
-  font-weight: 300px;
-  text-align: center;
-}
+  .card-figure {
+    transition: 0.8s ease;
+  }
 
-.hr-curses {
-  background-color: var(--black-200-color);
-  border: 2px solid var(--black-200-color);
-  width: 300px;
-}
+  .card-figure:hover {
+    transform: rotate(360deg);
+    transition: 0.8s ease;
+  }
 
-a.link-one {
-  background-color: var(--primary-color);
-  border-radius: 5px;
-  border: 2px solid var(--primary-color);
-  color: var(--white-color);
-  font-weight: 500;
-  margin-right: 25px;
-  padding: 5px 35px;
-}
+  .see-more-btn {
+    border: none;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: 0.4s ease;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .food-background {
+    background-image: url("../static/courses/food.jpg");
+    border: 3px solid #FF6347;
+  }
+  .food-background:hover {
+    transform: translateY(-3%);
+    transition: 0.3s ease;
+  }
+  .food-title {
+    color: #FF6347;
+  }
+  .food-btn {
+    background-color: #FF6347;
+  }
+  .food-btn:hover {
+    background-color: var(--white-color);
+    color: #FF6347;
+    outline: 2px solid #FF6347;
+    transition: 0.4s ease;
+  }
+
+  .agro-processes-background {
+    background-image: url("../static/courses/agro.jpg");
+    border: 3px solid #9ACD32;
+  }
+  .agro-processes-background:hover {
+    transform: translateY(-3%);
+    transition: 0.3s ease;
+  }
+  .agro-processes-title {
+    color: #9ACD32;
+  }
+  .agro-processes-btn {
+    background-color: #9ACD32;
+  }
+  .agro-processes-btn:hover {
+    background-color: var(--white-color);
+    color: #9ACD32;
+    outline: 2px solid #9ACD32;
+    transition: 0.4s ease;
+  }
+
+  .big-data-background {
+    background-image: url("../static/courses/data.jpg");
+    border: 3px solid #069AD5;
+  }
+  .big-data-background:hover {
+    transform: translateY(-3%);
+    transition: 0.3s ease;
+  }
+  .big-data-title {
+    color: #069AD5;
+  }
+  .big-data-btn {
+    background-color: #069AD5;
+  }
+  .big-data-btn:hover {
+    background-color: var(--white-color);
+    color: #069AD5;
+    outline: 2px solid #069AD5;
+    transition: 0.4s ease;
+  }
 </style>
