@@ -80,6 +80,18 @@ export default {
   head() {
     return {
       title: "Fatec Matão | Cursos",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!'
+        },
+
+        // Open Graph
+        { property: 'og:title', content: 'Fatec Matão | Cursos' },
+        { property: 'og:site_name', content: 'Fatec Matão | Cursos' },
+        { property: 'og:description', content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!' }
+      ]
     };
   },
 

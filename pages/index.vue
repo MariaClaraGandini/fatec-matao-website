@@ -274,6 +274,20 @@ export default {
   head() {
     return {
       title: "Fatec Matão | Início",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Faculdade de Tecnologia de Matão - Instituição pública estadual de ensino superior!'
+        },
+        { name: 'url', content: 'https://fatec-matao-web.vercel.app' },
+
+        // Open Graph
+        { property: 'og:title', content: 'Fatec Matão | Início' },
+        { property: 'og:site_name', content: 'Fatec Matão | Início' },
+        { property: 'og:description', content: 'Faculdade de Tecnologia de Matão - Instituição pública estadual de ensino superior!' },
+        { property: 'og:url', content: 'https://fatec-matao-web.vercel.app' }
+      ]
     };
   },
 
