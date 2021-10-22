@@ -14,13 +14,30 @@
 
         <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <nuxt-link
-              class="nav-link"
-              v-for="(menu, index) in menuItems"
-              :key="index"
-              :to="menu.url"
-            >
-              {{ menu.label }}
+            <nuxt-link to="/" class="nav-link">
+              Início
+            </nuxt-link>
+
+            <nuxt-link to="/courses" class="nav-link">
+              Cursos
+            </nuxt-link>
+
+            <b-nav-item-dropdown text="Serviços" class="nav-link dropdown" left>
+              <b-dropdown-item href="https://siga.cps.sp.gov.br/aluno/login.aspx" target="_blank" rel="noopener noreferrer">
+                SIGA - Alunos
+              </b-dropdown-item>
+
+              <b-dropdown-item href="https://siga.cps.sp.gov.br/fatec/login.aspx" target="_blank" rel="noopener noreferrer">
+                SIGA - Professores
+              </b-dropdown-item>
+            </b-nav-item-dropdown>
+
+            <nuxt-link to="/institutional" class="nav-link">
+              Institucional
+            </nuxt-link>
+
+            <nuxt-link to="/contact" class="nav-link">
+              Contato
             </nuxt-link>
           </b-navbar-nav>
         </b-collapse>
@@ -29,53 +46,20 @@
   </header>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      menuItems: [
-        {
-          url: "/",
-          label: "Início",
-        },
-        {
-          url: "/courses",
-          label: "Cursos",
-        },
-        {
-          url: "/services",
-          label: "Serviços",
-        },
-        {
-          url: "/institutional",
-          label: "Institucional",
-        },
-        {
-          url: "/contact",
-          label: "Contato",
-        },
-      ],
-    };
-  },
-};
-</script>
-
 <style scoped>
 .bg-light {
   background-color: var(--white-color) !important;
 }
 
 .nav-link {
+  color: var(--black-200-color);
+  font-size: 1.2rem;
   margin-inline: 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
 }
-
-.nav-link {
-  color: var(--black-200-color);
-  font-size: 1.2rem;
-}
 .nav-link:hover {
+  background-color: transparent;
   color: var(--black-color);
 }
 .nav-link::after {
@@ -89,5 +73,9 @@ export default {
 .nav-link:hover::after {
   transition: 0.6s ease;
   width: 70%;
+}
+
+li.dropdown {
+  padding-block: 0;
 }
 </style>
