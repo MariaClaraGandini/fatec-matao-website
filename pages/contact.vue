@@ -92,6 +92,24 @@
 
 <script>
 export default {
+    head() {
+    return {
+      title: "Fatec Matão | Contato",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Faculdade de Tecnologia de Matão - Dúvidas, críticas ou sugestões, entre em contato!'
+        },
+
+        // Open Graph
+        { property: 'og:title', content: 'Fatec Matão | Contato' },
+        { property: 'og:site_name', content: 'Fatec Matão | Contato' },
+        { property: 'og:description', content: 'Faculdade de Tecnologia de Matão - Dúvidas, críticas ou sugestões, entre em contato!' }
+      ]
+    };
+  },
+
   data() {
     return {
       emailItems: [
@@ -129,12 +147,6 @@ export default {
           this.dismissCountDown = this.dismissSecs;
         },
       },
-    };
-  },
-
-  head() {
-    return {
-      title: "Fatec Matão | Contato",
     };
   },
 };

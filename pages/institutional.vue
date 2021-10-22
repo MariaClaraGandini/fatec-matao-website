@@ -114,6 +114,18 @@ export default {
   head() {
     return {
       title: "Fatec Matão | Institucional",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Faculdade de Tecnologia de Matão - Conheça tudo sobre a nossa instituição!'
+        },
+
+        // Open Graph
+        { property: 'og:title', content: 'Fatec Matão | Institucional' },
+        { property: 'og:site_name', content: 'Fatec Matão | Institucional' },
+        { property: 'og:description', content: 'Faculdade de Tecnologia de Matão - Conheça tudo sobre a nossa instituição!' }
+      ]
     };
   },
 };

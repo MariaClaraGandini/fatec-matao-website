@@ -12,17 +12,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'robots', content: 'index, follow' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Faculdade de Tecnologia de Matão - Instituição pública estadual de ensino superior!'
-      },
       { name: 'subject', content: 'Faculdade de Tecnologia' },
-      { name: 'url', content: 'https://fatec-matao.vercel.app' },
       { name: 'generator', content: 'Visual Studio Code' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'creator', content: 'Maria Gandini, Mariana Lourenço, Ryan Oliveira, Vinicius Ricci' },
-      { name: 'theme-color', content: '#B01116' }
+      { name: 'author', content: 'Maria Gandini, Mariana Lourenço, Ryan Oliveira, Vinicius Ricci' },
+      { name: 'theme-color', content: '#B0116' },
+
+      // Open Graph
+      { property: 'og:type', content: 'Site institucional' },
+      { property: 'og:author', content: 'Maria Gandini, Mariana Lourenço, Ryan Oliveira, Vinicius Ricci' }
     ],
     link: [
       { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
