@@ -1,7 +1,7 @@
 <template>
   <main>
     <b-card class="form-card">
-      <b-card-text class="curses-style"> Tecnólogo em Alimentos </b-card-text>
+      <b-card-text class="curses-style"> Alimentos </b-card-text>
     </b-card>
 
     <b-container class="py-4">
