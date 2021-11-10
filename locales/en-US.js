@@ -48,6 +48,20 @@ export default {
 
     contact: {
 
+      socialNetworks: 'Follow the Fatec Matão', 
+      notice: 'Due to the pandemic we are teleworking',
+      notice2: 'We do not answer by phone, please send an e-mail to',
+      boardDirectors: 'Board of directors',
+      administrativeDepartment: 'Administrative department',
+      academicSecretary: 'Academic Secretary',
+      email: 'Email address',
+      enterEmail: 'Enter your email address',
+      name: 'Name',
+      enterName: 'Enter your name',
+      question: 'What is your question?',
+      send: 'Send',
+      clear: 'Clear'
+
     }
   },
 

@@ -5,6 +5,7 @@
         src="https://jcmatao.com.br/wp-content/uploads/2019/06/Fatec-660x330.jpg"
         fluid-grow
         alt="Fluid-grow image"
+        class="img-banner"
       ></b-img>
     </div>
     <h1>
@@ -40,14 +41,20 @@
 
     <div class="container-form">
       <!-- <div class="art"></div> -->
-      <b-form @submit="onSubmit" @reset="onReset" class="form-align color-text">
+      <b-form @submit="onSubmit" @reset="onReset" class="form-align color-text" action="https://api.staticforms.xyz/submit" method="post">
+
+        <input type="hidden" name="accessKey" value="c07d2dc6-af8b-4f1b-b7b1-423d596498e1">
+        <input type="hidden" name="redirectTo" value="https://fatec-matao-web.vercel.app/contact">
+
         <b-form-group
           id="input-group-1"
           label="Email:"
           label-for="input-1"
+          
         >
           <b-form-input
             id="input-1"
+            name="email"
             v-model="a"
             type="email"
             placeholder="Digite seu email"
@@ -60,18 +67,21 @@
           id="input-group-2"
           label="Nome:"
           label-for="input-2"
+          
         >
           <b-form-input
             id="input-2"
             v-model="a"
             placeholder="Digite seu nome"
             class="color-input"
+            name="name"
             required
           ></b-form-input>
         </b-form-group>
 
         <b-form-textarea
           id="textarea-rows"
+          name="message"
           placeholder="Qual sua dúvida?"
           rows="8"
           required
@@ -173,6 +183,10 @@ hr {
   height: 2px;
 }
 
+.img-banner{
+  height: 85vh;
+}
+
 .avisos {
   /* background-color: var(--secondary-color); */
   color: black;
@@ -236,6 +250,7 @@ hr {
   color: #000;
   border-color: none;
   border-radius: 15px;
+  border: black;
 }
 
 .button-submit {

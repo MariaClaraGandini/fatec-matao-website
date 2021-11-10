@@ -47,6 +47,19 @@ export default {
     },
 
     contact: {
+      socialNetworks: 'Acompanhe a Fatec de Matão',
+      notice: 'Devido a pandemia estamos em teletrabalho',
+      notice2: 'Não atendemos por telefone, encaminhe um e-mail para',
+      boardDirectors: 'Diretoria',
+      administrativeDepartment: 'Secretaria Administrativa',
+      academicSecretary: 'Secretaria Acadêmica',
+      email: 'Email',
+      enterEmail: 'Digite seu email',
+      name: 'Nome',
+      enterName: 'Digite seu nome',
+      question: 'Qual sua duvida ?',
+      send: 'Enviar',
+      clear: 'Limpar'
 
     }
   },
