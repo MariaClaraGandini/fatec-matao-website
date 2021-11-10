@@ -14,8 +14,8 @@
           <p class="description">
             O Tecnólogo em Alimentos, desenvolve tecnologia para produtos
             cárneos, lácteos, frutas, fermentados e destilados, aborda matérias
-            fundamentais como química, bioquímica e nutrição, além de ensinar
-            todo o processo industrial, embalagem e conserva. <br />
+            fundamentais como química, bioquímica e nutrição, além de compreender
+            todo o processo industrial, de embalagem e conserva. <br />
             O aluno vai estar apto para planejar e gerenciar uma equipe, definir
             o tempo de exposição do alimento, aprender boas práticas de
             fabricação como: vestimenta, equipamento e higienização correta,
