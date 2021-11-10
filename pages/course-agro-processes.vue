@@ -81,12 +81,12 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!'
+          content: ' O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos!'
         },
         // Open Graph
         { property: 'og:title', content: 'Fatec Matão | Cursos' },
         { property: 'og:site_name', content: 'Fatec Matão | Cursos' },
-        { property: 'og:description', content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!' }
+        { property: 'og:description', content: ' O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos!' }
       ]
     };
   },
