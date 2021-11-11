@@ -18,8 +18,11 @@
 					<b-row class="text-center mt-3">
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<img src="" alt="Graduação" width="50" class="mt-3">
+							<img src="../static/icons/mission.svg" alt="Graduação" width="50" class="mt-n3">
 							<h2 class="d-inline-flex pt-2 ">Missão</h2>
+
+						</div>
+						<div>
 
 							<p class="mt-3">
 								Oferecer educação <br>
@@ -33,7 +36,7 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<img src="" alt="Graduação" width="60" class="mt-3">
+							<img src="../static/icons/vision.svg" alt="Graduação" width="50">
 							<h2 class="d-inline-flex pt-2">Visão</h2>
 
 							<p class="mt-3">
@@ -47,23 +50,11 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<img src="" alt="Valores da Fatec Matão" width="40" class="mt-3">
-							<h2 class="d-inline-flex pt-2 ">Valores</h2>
+							<img src="../static/icons/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2">
+							<h2 class="d-inline-flex mt-2">Valores</h2>
 
-							<p class="mt-3">
-								<ul>
-									<li class="p-1">Valorização e
-								desenvolvimento humano
-
-									<li  class="p-1">Postura ética e
-								comprometimento
-
-									<li  class="p-1">Responsabilidade e
-								sustentabilidade
-
-									<li  class="p-1">Criatividade e inovação
-									</li>
-								</ul>
+							<p class="mt-3 p-2">Inovação, criatividade, comprometimento,
+							postura ética, desenvolvimento humano e sustentabilidade.
 							</p>
 						</div>
 					</b-col>
@@ -87,7 +78,7 @@
 							class="d-block img-fluid mx-auto"
 							height="300"
 							width="1400"
-							src=""
+							src="../static/images/fatec-image-1.jpg"
 							alt="Foto da Instituição Fatec, unidade de Matão"
 						>
 					</template>
@@ -99,12 +90,13 @@
 							class="d-block img-fluid mx-auto"
 							height="300"
 							width="1400"
-							src=""
+							src="../static/images/fatec-image-2.jpg"
 							alt="Foto da Instituição Fatec, unidade de Matão"
 						>
 					</template>
 				</b-carousel-slide>
-    		</b-carousel>
+			</b-carousel>
+				
 		</b-container>
 	</main>
 </template>
@@ -141,3 +133,4 @@ p {
   font-size: 1.25rem;
 }
 </style>
+
