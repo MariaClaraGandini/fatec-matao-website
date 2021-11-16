@@ -10,7 +10,8 @@
     </div>
     <h1>
       Acompanhe a
-      <strong>Fatec Matão:
+      <strong
+        >Fatec Matão:
         <a href="https://www.facebook.com/fatecmatao">
           <img src="../static/icons/icons8-facebook.svg" alt="Facebook" />
         </a>
@@ -39,84 +40,74 @@
 
     <!-- Form -->
 
-    <div class="container-form">
+    <div >
       <!-- <div class="art"></div> -->
-      <b-form @submit="onSubmit" @reset="onReset" class="form-align color-text" action="https://api.staticforms.xyz/submit" method="post">
+      <form @submit.prevent="send" class="container-form">
+        
+          <input
+            v-model="$v.name.$model"
+            placeholder="Nome"
+            :class="{ error: $v.name.$error }"
+            class=".color-input input"
+          /><br />
+          <p v-if="$v.name.$error" class="error">Por favor digite seu nome!</p>
+        
 
-        <input type="hidden" name="accessKey" value="c07d2dc6-af8b-4f1b-b7b1-423d596498e1">
-        <input type="hidden" name="redirectTo" value="https://fatec-matao-web.vercel.app/contact">
+        <input
+          v-model="$v.email.$model"
+          placeholder="E-mail"
+          :class="{ error: $v.email.$error }"
+          class=".color-input input"
+        /><br />
+        <p v-if="$v.email.$error" class="error">
+          Por favor utilize um e-mail valido!
+        </p>
 
-        <b-form-group
-          id="input-group-1"
-          label="Email:"
-          label-for="input-1"
-          
-        >
-          <b-form-input
-            id="input-1"
-            name="email"
-            v-model="a"
-            type="email"
-            placeholder="Digite seu email"
-            class="color-input"
-            required
-          ></b-form-input>
-        </b-form-group>
+        <textarea
+          v-model="$v.message.$model"
+          cols="30"
+          rows="10"
+          placeholder="Conte-nos sua duvida ?"
+          :class="{ error: $v.message.$error }"
+          class=".color-input input"
+        /><br />
+        <p v-if="$v.message.$error" class="error">
+          Por favor, qual sua duvida ?
+        </p>
 
-        <b-form-group
-          id="input-group-2"
-          label="Nome:"
-          label-for="input-2"
-          
-        >
-          <b-form-input
-            id="input-2"
-            v-model="a"
-            placeholder="Digite seu nome"
-            class="color-input"
-            name="name"
-            required
-          ></b-form-input>
-        </b-form-group>
-
-        <b-form-textarea
-          id="textarea-rows"
-          name="message"
-          placeholder="Qual sua dúvida?"
-          rows="8"
-          required
-          validated="true"
-          class="color-input"
-        ></b-form-textarea>
-        <b-button type="submit" variant="outline-danger" class="button-submit"
-          >Enviar</b-button
-        >
-        <b-button type="reset" variant="outline-dark" class="button-reset"
-          >Limpar</b-button
-        >
-        <!-- <b-alert variant="success" show>Success Alert</b-alert> -->
-      </b-form>
+        <button type="submit" :disabled="$v.$error" class="button-submit">Enviar</button>
+      </form>
     </div>
   </main>
 </template>
 
 <script>
+import { validationMixin } from "vuelidate";
+import { required, email, minLength } from "vuelidate/lib/validators";
+
 export default {
-    head() {
+  mixins: [validationMixin],
+
+  head() {
     return {
       title: "Fatec Matão | Contato",
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'Faculdade de Tecnologia de Matão - Dúvidas, críticas ou sugestões, entre em contato!'
+          hid: "description",
+          name: "description",
+          content:
+            "Faculdade de Tecnologia de Matão - Dúvidas, críticas ou sugestões, entre em contato!",
         },
 
         // Open Graph
-        { property: 'og:title', content: 'Fatec Matão | Contato' },
-        { property: 'og:site_name', content: 'Fatec Matão | Contato' },
-        { property: 'og:description', content: 'Faculdade de Tecnologia de Matão - Dúvidas, críticas ou sugestões, entre em contato!' }
-      ]
+        { property: "og:title", content: "Fatec Matão | Contato" },
+        { property: "og:site_name", content: "Fatec Matão | Contato" },
+        {
+          property: "og:description",
+          content:
+            "Faculdade de Tecnologia de Matão - Dúvidas, críticas ou sugestões, entre em contato!",
+        },
+      ],
     };
   },
 
@@ -137,27 +128,31 @@ export default {
         },
       ],
 
-      form: {
-        email: "",
-        name: "",
-      },
-
-      methods: {
-        onSubmit(event) {
-          event.preventDefault();
-        },
-
-        onReset(event) {
-          event.preventDefault();
-          this.form.email = "";
-          this.form.name = "";
-        },
-
-        showAlert() {
-          this.dismissCountDown = this.dismissSecs;
-        },
-      },
+      email: "",
+      name: "",
+      message: "",
+      result: "",
     };
+  },
+
+  methods: {
+    send() {
+      this.result = "";
+
+      this.$v.$touch();
+      if (this.$v.$invalid) return;
+
+      this.name = "";
+      this.email = "";
+      this.message = "";
+      this.$v.$reset();
+    },
+  },
+
+  validations: {
+    name: { required, minLength: minLength(2) },
+    email: { required, email },
+    message: { required, minLength: minLength(10) },
   },
 };
 </script>
@@ -183,8 +178,12 @@ hr {
   height: 2px;
 }
 
-.img-banner{
+.img-banner {
   height: 85vh;
+}
+
+.btn {
+  background-color: var(--gray-color);
 }
 
 .avisos {
@@ -230,22 +229,25 @@ hr {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.input-container{
+  width: 90%;
+}
 
-.form-align{
+.form-align {
   margin: 0 auto;
   margin-top: 27px;
 }
 
-.color-text{
-  color: #FFF;
+.color-text {
+  color: #fff;
 }
 
-.color-input{
+.color-input {
   background-color: #f4f3ee;
   color: #000;
   border-color: none;
@@ -254,9 +256,9 @@ hr {
 }
 
 .button-submit {
-  margin-top: 20px;
-  margin-right: 20px;
-  background-color: #4FB34F;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #4fb34f;
   color: var(--white-color);
   border-color: transparent;
 }
@@ -282,39 +284,50 @@ hr {
   font-weight: 700;
 }
 
-@media (min-width: 320px) { 
-
-  .avisos{
-    height: 350px;
-  }
-
-  .container-form{
-    width: 80%;
-  }
-
+.input {
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  width: 60%;
 }
 
-@media (min-width: 375px) { 
-
-  .avisos{
+@media (min-width: 320px) {
+  .avisos {
     height: 350px;
   }
 
-  .container-form{
+  .container-form {
     width: 80%;
   }
-
 }
 
-@media (min-width: 414px) { 
-
-  .avisos{
+@media (min-width: 375px) {
+  .avisos {
     height: 350px;
   }
 
-  .container-form{
+  .container-form {
     width: 80%;
   }
+}
 
+@media (min-width: 414px) {
+  .avisos {
+    height: 350px;
+  }
+
+  .container-form {
+    width: 80%;
+  }
+}
+
+input.error,
+textarea.error {
+  border: 2px solid #ffff3f;
+}
+
+p.error {
+  color: white;
+  padding: 15px;
 }
 </style>
