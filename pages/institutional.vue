@@ -18,7 +18,7 @@
 					<b-row class="text-center mt-3">
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<!-- <img src="./static/icons/mission.svg" alt="Graduação" width="50" class="mt-n3"> -->
+							 <img src="./static/icons/mission.svg" alt="Graduação" width="50" class="mt-n3"> 
 							<h2 class="d-inline-flex pt-2 ">Missão</h2>
 
 						</div>
@@ -36,7 +36,7 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<!-- <img src="./static/icons/vision.svg" alt="Graduação" width="50"> -->
+							 <img src="./static/icons/vision.svg" alt="Graduação" width="50"> 
 							<h2 class="d-inline-flex pt-2">Visão</h2>
 
 							<p class="mt-3">
@@ -50,7 +50,7 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<!-- <img src="./static/icons/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> -->
+							<img src="./static/icons/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> 
 							<h2 class="d-inline-flex mt-2">Valores</h2>
 
 							<p class="mt-3 p-2">Inovação, criatividade, comprometimento,
@@ -74,25 +74,25 @@
 			>
 				<b-carousel-slide>
 					<template #img>
-						<!-- <img
+					<img
 							class="d-block img-fluid mx-auto"
 							height="300"
 							width="1400"
 							src="./static/images/fatec-image-1.jpg"
 							alt="Foto da Instituição Fatec, unidade de Matão"
-						> -->
+						> 
 					</template>
 				</b-carousel-slide>
 
 				<b-carousel-slide>
 					<template #img>
-						<!-- <img
+						<img
 							class="d-block img-fluid mx-auto"
 							height="300"
 							width="1400"
 							src="./static/images/fatec-image-2.jpg"
 							alt="Foto da Instituição Fatec, unidade de Matão"
-						> -->
+						>
 					</template>
 				</b-carousel-slide>
 			</b-carousel>
