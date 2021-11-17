@@ -39,27 +39,7 @@
             empresas de gestão da produção industrial, automação industrial, e
             banco de dados, assim como empreender abrindo um comércio.
           </p>
-
-          <div class="mt-3">
-            <b-card
-              img-src="https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390_960_720.jpg"
-              img-alt="Card image"
-              img-left
-              class="mb-0"
-              style="width: 200px; height: 180px"
-            >
-              <b-card-text>
-                <p class="description-class">
-                  <b>Coordenador do curso </b><br />
-                  Prof. usuario do curso <br />
-                  <b>Email do coordenador </b><br />
-                  usuariodocurso@fatec.sp.gov.br
-                </p>
-                <a href="#" target="_blank" class="link-one"> Grade </a>
-                <a href="#" target="_blank" class="link-one"> horário </a>
-              </b-card-text>
-            </b-card>
-          </div>
+          
         </b-col>
       </b-row>
     </b-container>
