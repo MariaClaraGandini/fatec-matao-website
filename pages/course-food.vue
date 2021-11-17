@@ -1,29 +1,26 @@
 <template>
   <main>
     <b-card class="form-card">
-      <b-card-text class="curses-style"> Alimentos </b-card-text>
+      <b-card-text class="curses-style">
+        {{ $t("pages.courses.textFood") }}
+      </b-card-text>
     </b-card>
 
     <b-container class="py-4">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Áreas de Atuação</h2>
+          <h2 class="subtitle-style">
+            {{ $t("pages.courses.textArea") }}
+          </h2>
 
           <hr class="hr-curses mt-3" />
 
           <p class="description">
-            O Tecnólogo em Alimentos, desenvolve tecnologia para produtos
-            cárneos, lácteos, frutas, fermentados e destilados, aborda matérias
-            fundamentais como química, bioquímica e nutrição, além de compreender
-            todo o processo industrial, de embalagem e conserva. <br />
-            O aluno vai estar apto para planejar e gerenciar uma equipe, definir
-            o tempo de exposição do alimento, aprender boas práticas de
-            fabricação como: vestimenta, equipamento e higienização correta,
-            também pode atuar em laboratórios, pesquisando características,
-            matérias-primas e produtos. <br />
-            - Duração: 6 semestres. <br />
-            - Período: matutino e noturno.<br />
-            - Vagas: 40 vagas por período.
+            {{ $t("pages.courses.foodText") }} <br />
+            {{ $t("pages.courses.foodText1") }} <br />
+            {{ $t("pages.courses.textDuration") }} <br />
+            {{ $t("pages.courses.textPeriod") }} <br />
+            {{ $t("pages.courses.textVacancies") }} <br />
           </p>
         </b-col>
       </b-row>
@@ -32,15 +29,15 @@
     <b-container class="py-0">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Perfil Do Profissional</h2>
+          <h2 class="subtitle-style">
+            {{ $t("pages.courses.textProfile") }}
+          </h2>
 
           <hr class="hr-curses mt-3" />
 
           <p class="description">
-            O profissional de Alimentos pode atuar em redes de supermercados,
-            usinas de cana-de-açúcar, fábricas de conserva, frigoríficos,
-            indústrias alimentícias, assim como empreender abrindo um comércio.
-          </p>          
+            {{ $t("pages.courses.textFood2") }}
+          </p>
         </b-col>
       </b-row>
     </b-container>
@@ -61,16 +58,21 @@ export default {
       title: "Fatec Matão | Cursos",
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!'
+          hid: "description",
+          name: "description",
+          content:
+            "O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!",
         },
 
         // Open Graph
-        { property: 'og:title', content: 'Fatec Matão | Cursos' },
-        { property: 'og:site_name', content: 'Fatec Matão | Cursos' },
-        { property: 'og:description', content: 'O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!' }
-      ]
+        { property: "og:title", content: "Fatec Matão | Cursos" },
+        { property: "og:site_name", content: "Fatec Matão | Cursos" },
+        {
+          property: "og:description",
+          content:
+            "O Tecnólogo em Alimentos, desenvolve tecnologia para diversos produtos!",
+        },
+      ],
     };
   },
 
