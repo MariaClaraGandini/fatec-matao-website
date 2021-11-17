@@ -2,7 +2,7 @@
   <main>
     <div>
       <b-img
-        src="https://jcmatao.com.br/wp-content/uploads/2019/06/Fatec-660x330.jpg"
+        src="~/static/images/fatec2.jpg"
         fluid-grow
         alt="Fluid-grow image"
         class="img-banner"
