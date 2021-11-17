@@ -4,9 +4,8 @@
 				<b-row>
 					<b-col cols="12">
 						<div>
-							<h1 class= "text-center">
-								Conheça nossa unidade!
-							</h1>
+							<h1 class= "text-center">Conheça nossa unidade!</h1>
+
 							<p class="description text-center">
 							Fatec de Matão foi fundada em outubro de 2018, uma das 73 Unidades de Ensino
 							do Centro Estadual de Educação Tecnlológica Paula Souza, que são distribuidas
@@ -18,7 +17,7 @@
 					<b-row class="text-center mt-3">
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							 <img src="~/static/icons/mission.svg" alt="Graduação" width="50" class="mt-n3"> 
+							 <img src="../static/icons/mission.svg" alt="Graduação" width="50" class="mt-n3"> 
 							<h2 class="d-inline-flex pt-2 ">Missão</h2>
 
 						</div>
@@ -36,7 +35,7 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							 <img src="~/static/icons/vision.svg" alt="Graduação" width="50"> 
+							 <img src="../static/icons/vision.svg" alt="Graduação" width="50"> 
 							<h2 class="d-inline-flex pt-2">Visão</h2>
 
 							<p class="mt-3">
@@ -50,7 +49,7 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<img src="~/static/images/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> 
+							<img src="../static/icons/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> 
 							<h2 class="d-inline-flex mt-2">Valores</h2>
 
 							<p class="mt-3 p-2">Inovação, criatividade, comprometimento,
@@ -78,7 +77,7 @@
 							class="d-block img-fluid mx-auto"
 							height="300"
 							width="1400"
-							src="~/static/images/fatec-image-1.jpg"
+							src="../static/images/fatec-image-1.jpg"
 							alt="Foto da Instituição Fatec, unidade de Matão"
 						> 
 					</template>
@@ -90,7 +89,7 @@
 							class="d-block img-fluid mx-auto"
 							height="300"
 							width="1400"
-							src="~/static/images/fatec2.jpg"
+							src="../static/images/fatec-image-2.jpg"
 							alt="Foto da Instituição Fatec, unidade de Matão"
 						>
 					</template>
@@ -112,7 +111,6 @@ export default {
           name: 'description',
           content: 'Faculdade de Tecnologia de Matão - Conheça tudo sobre a nossa instituição!'
         },
-
         // Open Graph
         { property: 'og:title', content: 'Fatec Matão | Institucional' },
         { property: 'og:site_name', content: 'Fatec Matão | Institucional' },
@@ -128,9 +126,7 @@ h1 {
   font-size: clamp(2.45rem, 5vw - 0.5rem, 3.5rem);
   font-weight: 650;
 }
-
 p {
   font-size: 1.25rem;
 }
 </style>
-
