@@ -36,8 +36,8 @@
 
             <li v-for="(email, index) in emailItems" :key="index">
               <span class="label-style font-weight-bold">
-				  {{ email.label}}
-			  </span>
+				        {{ email.label}}
+			        </span>
               <span class="content-style">{{ email.email }}</span>
             </li>
           </ul>
@@ -102,7 +102,9 @@
 
       <b-row class="py-3 text-center copyright">
         <b-col cols="12">
-          <span class="text-white">&copy; Fatec Matão 2021 - Todos os direitos reservados.</span>
+          <span class="text-white">
+            {{ $t('footer.copyright') }}
+          </span>
         </b-col>
       </b-row>
     </footer>
@@ -114,34 +116,34 @@ export default {
   data() {
     return {
       addressItems: [
-        "Avenida Habib Gabriel, 1350",
-        "Bairro Residencial Olivio Benassi",
-        "CEP: 15990-539 - Matão/SP",
+        this.$t('footer.locale.avenue'),
+        this.$t('footer.locale.neighborhood'),
+        this.$t('footer.locale.zipCode'),
       ],
 
       emailItems: [
         {
-          label: "Diretoria:",
-          email: "f297dir@cps.sp.gov.br",
+          label: this.$t('footer.email.direction.title'),
+          email: this.$t('footer.email.direction.email'),
         },
         {
-          label: "Administrativo:",
-          email: "f297adm@cps.sp.gov.br",
+          label: this.$t('footer.email.administrative.title'),
+          email: this.$t('footer.email.administrative.email'),
         },
         {
-          label: "Acadêmico:",
-          email: "f297acad@cps.sp.gov.br",
+          label: this.$t('footer.email.academic.title'),
+          email: this.$t('footer.email.academic.email'),
         },
       ],
 
       contactNumbersItems: [
         {
-          label: "Telefone 1:",
-          number: "(16) 3384-5847",
+          label: this.$t('footer.numberPhone.numberOne.title'),
+          number: this.$t('footer.numberPhone.numberOne.number'),
         },
         {
-          label: "Telefone 2:",
-          number: "(16) 2016-2694",
+          label: this.$t('footer.numberPhone.numberTwo.title'),
+          number: this.$t('footer.numberPhone.numberTwo.number'),
         },
       ],
     };

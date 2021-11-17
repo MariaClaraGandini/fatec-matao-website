@@ -15,16 +15,11 @@
         >
           <div>
             <h1>
-              Ei estudante, <br />
-              venha ser um <br />
-              <span> #Fatecano! </span>
+              {{ $t('pages.home.title') }}
             </h1>
 
             <p class="description">
-              A <span>Fatec Matão</span> oferece <span>cursos superiores</span>
-              <br />
-              de qualidade, em diferentes áreas <br />
-              do conhecimento.
+              {{ $t('pages.home.titleDesc') }}
             </p>
 
             <div>
@@ -33,10 +28,12 @@
                 target="_blank"
                 class="link-one"
               >
-                Vestibular
+                {{ $t('pages.home.entranceExamButton') }}
               </a>
 
-              <nuxt-link to="/contact" class="link-two"> Contato </nuxt-link>
+              <nuxt-link to="/contact" class="link-two">
+                {{ $t('pages.home.contactButton') }}
+              </nuxt-link>
             </div>
           </div>
         </b-col>
@@ -100,13 +97,14 @@
     <b-container class="py-4">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Objetivos</h2>
+          <h2 class="subtitle-style">
+            {{ $t('pages.home.objectives') }}
+          </h2>
 
           <hr class="hr-style mt-3" />
 
           <p class="description-style">
-            Conheça um pouco de nossa conduta, <br />
-            em relação ao nosso ensino
+            {{ $t('pages.home.objectivesDesc') }}
           </p>
         </b-col>
       </b-row>
@@ -116,16 +114,14 @@
           <div class="m-3">
             <img
               src="../static/icons/graduation-icon.svg"
-              alt="Graduação"
-              title="Graduação"
+              :alt="$t('pages.home.graduation')"
+              :title="$t('pages.home.graduation')"
               draggable="false"
               width="90"
             />
 
             <p class="mt-3">
-              Formar profissionais <br />
-              em diversas áreas do <br />
-              conhecimento
+              {{ $t('pages.home.graduationDesc') }}
             </p>
           </div>
         </b-col>
@@ -134,16 +130,14 @@
           <div class="m-3">
             <img
               src="../static/icons/brain-icon.svg"
-              alt="Conhecimento"
-              title="Conhecimento"
+              :alt="$t('pages.home.knowledge')"
+              :title="$t('pages.home.knowledge')"
               draggable="false"
               width="90"
             />
 
             <p class="mt-3">
-              Estimular continuamente <br />
-              o conhecimento <br />
-              tecnológico
+              {{ $t('pages.home.knowledgeDesc') }}
             </p>
           </div>
         </b-col>
@@ -152,16 +146,14 @@
           <div class="m-3">
             <img
               src="../static/icons/search-icon.svg"
-              alt="Pesquisa"
-              title="Pesquisa"
+              :alt="$t('pages.home.research')"
+              :title="$t('pages.home.research')"
               draggable="false"
               width="90"
             />
 
             <p class="mt-3">
-              Produzir o <br />
-              desenvolvimento <br />
-              científico
+              {{ $t('pages.home.researchDesc') }}
             </p>
           </div>
         </b-col>
@@ -171,13 +163,14 @@
     <b-container class="py-4">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Notícias</h2>
+          <h2 class="subtitle-style">
+            {{ $t('pages.home.news') }}
+          </h2>
 
           <hr class="hr-style mt-3" />
 
           <p class="description-style">
-            Acompanhe algumas notícias <br />
-            sobre nossa instituição
+            {{ $t('pages.home.newsDesc') }}
           </p>
         </b-col>
       </b-row>
@@ -185,7 +178,7 @@
       <b-row>
         <b-col cols="12" lg="4">
           <b-card
-            title="Fatec Matão - Projetando o fututo (YouTube)"
+            :title="$t('pages.home.newsTitleOne')"
             img-src="../static/news/news-1.jpg"
             img-alt="Fatec - Projetando o futuro"
             img-top
@@ -200,17 +193,19 @@
                 rel="noopener noreferrer"
                 class="card-link"
               >
-                Acessar
+                {{ $t('pages.home.accessButton') }}
               </b-link>
 
-              <span class="font-weight-normal"> 13/09/2021 </span>
+              <span class="font-weight-normal">
+                {{ $t('pages.home.newsDateOne') }}
+              </span>
             </div>
           </b-card>
         </b-col>
 
         <b-col cols="12" lg="4">
           <b-card
-            title="Câmara aprova doações de áreas para Senai e Fatec"
+            :title="$t('pages.home.newsTitleTwo')"
             img-src="../static/news/news-2.jpg"
             img-alt="Câmara aprova doações de áreas para Senai e Fatec"
             img-top
@@ -225,17 +220,19 @@
                 rel="noopener noreferrer"
                 class="card-link"
               >
-                Acessar
+                {{ $t('pages.home.accessButton') }}
               </b-link>
 
-              <span class="font-weight-normal"> 10/09/2021 </span>
+              <span class="font-weight-normal"> 
+                {{ $t('pages.home.newsDateTwo') }}
+              </span>
             </div>
           </b-card>
         </b-col>
 
         <b-col cols="12" lg="4">
           <b-card
-            title="Prefeitura apresenta área de 21 mil m² para instalações da Fatec"
+            :title="$t('pages.home.newsTitleThree')"
             img-src="../static/news/news-3.jpg"
             img-alt="Fatec ganha área de 21 mil metros quadrados para instalações"
             img-top
@@ -250,10 +247,12 @@
                 rel="noopener noreferrer"
                 class="card-link"
               >
-                Acessar
+                {{ $t('pages.home.accessButton') }}
               </b-link>
 
-              <span class="font-weight-normal"> 23/07/2021 </span>
+              <span class="font-weight-normal">
+                {{ $t('pages.home.newsDateThree') }}
+              </span>
             </div>
           </b-card>
         </b-col>

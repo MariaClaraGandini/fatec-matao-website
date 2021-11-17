@@ -53,7 +53,7 @@ export default {
   i18n: {
     strategy: 'no_prefix',
     detectBrowserLanguage: {
-      useCookie: false,
+      useCookie: true,
     },
     locales: [
       {

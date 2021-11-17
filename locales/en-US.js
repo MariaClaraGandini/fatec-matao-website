@@ -2,9 +2,14 @@ export default {
   menu: {
     home: 'Home',
     courses: 'Courses',
-    services: 'Services',
-    institucional: 'Intitutional',
-    contact: 'Contact'
+    services: {
+      title: 'Services',
+      serviceOne: 'SIGA - Students',
+      serviceTwo: 'SIGA - Teachers'
+    },
+    institucional: 'Institutional',
+    contact: 'Contact',
+    language: 'Languages'
   },
 
   pages: {
@@ -48,7 +53,7 @@ export default {
 
     contact: {
 
-      socialNetworks: 'Follow the Fatec Matão', 
+      socialNetworks: 'Follow the Fatec Matão',
       notice: 'Due to the pandemic we are teleworking',
       notice2: 'We do not answer by phone, please send an e-mail to',
       boardDirectors: 'Board of directors',
@@ -73,14 +78,29 @@ export default {
     },
 
     email: {
-      direction: 'Direction: f297dir@cps.sp.gov.br',
-      administrative: 'Administrative: f297adm@cps.sp.gov.br',
-      academic: 'Academic: f297acad@cps.sp.gov.br'
+      direction: {
+        title: 'Direction:',
+        email: 'f297dir@cps.sp.gov.br'
+      },
+      administrative: {
+        title: 'Administrative:',
+        email: 'f297adm@cps.sp.gov.br'
+      },
+      academic: {
+        title: 'Academic:',
+        email: 'f297acad@cps.sp.gov.br'
+      }
     },
 
     numberPhone:{
-      numberOne: 'Phone 01: +55 (16) 3384-5847',
-      numberTwo: 'Phone 02: +55 (16) 2016-2694'
+      numberOne: {
+        title: 'Phone 01:',
+        number: '+55 (16) 3384-5847'
+      },
+      numberTwo: {
+        title: 'Phone 02:',
+        number: '+55 (16) 2016-2694'
+      }
     },
 
     copyright: '© Fatec Matão 2021 - All rights reserved.'

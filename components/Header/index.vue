@@ -15,36 +15,63 @@
         <b-collapse class="justify-content-end" id="nav-collapse" is-nav>
           <b-navbar-nav>
             <nuxt-link to="/" class="nav-link">
-              Início
+              {{ $t('menu.home') }}
             </nuxt-link>
 
             <nuxt-link to="/courses" class="nav-link">
-              Cursos
+              {{ $t('menu.courses') }}
             </nuxt-link>
 
-            <b-nav-item-dropdown text="Serviços" class="nav-link dropdown" left>
+            <b-nav-item-dropdown :text="$t('menu.services.title')" class="nav-link dropdown" left>
               <b-dropdown-item href="https://siga.cps.sp.gov.br/aluno/login.aspx" target="_blank" rel="noopener noreferrer">
-                SIGA - Alunos
+                {{ $t('menu.services.serviceOne') }}
               </b-dropdown-item>
 
               <b-dropdown-item href="https://siga.cps.sp.gov.br/fatec/login.aspx" target="_blank" rel="noopener noreferrer">
-                SIGA - Professores
+                {{ $t('menu.services.serviceTwo') }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
 
             <nuxt-link to="/institutional" class="nav-link">
-              Institucional
+              {{ $t('menu.institucional') }}
             </nuxt-link>
 
             <nuxt-link to="/contact" class="nav-link">
-              Contato
+              {{ $t('menu.contact') }}
             </nuxt-link>
+
+            <b-nav-item-dropdown :text="$t('menu.language')" class="nav-link dropdown" left>
+                <b-dropdown-item
+                  href="#"
+                  v-for="locale of availableLocales"
+                  :key="locale.code"
+                  @click.prevent="switchLocalePath(locale.code)"
+                >
+                  {{ locale.name }}
+                </b-dropdown-item>
+              </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
       </b-container>
     </b-navbar>
   </header>
 </template>
+
+<script>
+export default {
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
+    }
+  },
+
+  methods: {
+    switchLocalePath(code) {
+      this.$i18n.setLocale(code)
+    }
+  }
+}
+</script>
 
 <style scoped>
 .bg-light {

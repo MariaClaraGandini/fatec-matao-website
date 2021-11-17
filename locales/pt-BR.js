@@ -2,29 +2,34 @@ export default {
   menu: {
     home: 'Início',
     courses: 'Cursos',
-    services: 'Serviços',
+    services: {
+      title: 'Serviços',
+      serviceOne: 'SIGA - Alunos',
+      serviceTwo: 'SIGA - Professores'
+    },
     institucional: 'Institucional',
-    contact: 'Contato'
+    contact: 'Contato',
+    language: 'Idiomas'
   },
 
   pages: {
     home: {
-      title: 'Ei estudante, venha ser um #Fatecano!',
-      titleDesc: 'A Fatec Matão oferece cursos superiores de qualidade, em diferentes áreas do conhecimento.',
+      title: "Ei estudante, <br /> venha ser um <br /> <span>#Fatecano!</span>",
+      titleDesc: 'A <span>Fatec Matão</span> oferece <span>cursos superiores</span> <br /> de qualidade, em diferentes áreas <br /> do conhecimento.',
       entranceExamButton: 'Vestibular',
       contactButton: 'Contato',
 
       objectives: 'Objetivos',
-      objectivesDesc: 'Conheça um pouco de nossa conduta, em relação ao nosso ensino',
+      objectivesDesc: 'Conheça um pouco de nossa conduta, <br /> em relação ao nosso ensino',
       graduation: 'Graduação',
-      graduationDesc: 'Formar profissionais em diversas áreas do conhecimento',
+      graduationDesc: 'Formar profissionais <br /> em diversas áreas do <br /> conhecimento',
       knowledge: 'Conhecimento',
-      knowledgeDesc: 'Estimular continuamente o conhecimento tecnológico',
+      knowledgeDesc: 'Estimular continuamente <br /> o conhecimento <br /> tecnológico',
       research: 'Pesquisa',
-      researchDesc: 'Produzir o desenvolvimento científico',
+      researchDesc: 'Produzir o <br /> desenvolvimento <br /> científico',
 
       news: 'Notícias',
-      newsDesc: 'Acompanhe algumas notícias sobre nossa instituição',
+      newsDesc: 'Acompanhe algumas notícias <br /> sobre nossa instituição',
       newsTitleOne: 'Fatec Matão - Projetando o fututo (YouTube)',
       newsDateOne: '13/09/2021',
       newsTitleTwo: 'Câmara aprova doações de áreas para Senai e Fatec',
@@ -72,14 +77,29 @@ export default {
     },
 
     email: {
-      direction: 'Diretoria: f297dir@cps.sp.gov.br',
-      administrative: 'Administrativo: f297adm@cps.sp.gov.br',
-      academic: 'Acadêmico: f297acad@cps.sp.gov.br'
+      direction: {
+        title: 'Diretoria:',
+        email: 'f297dir@cps.sp.gov.br'
+      },
+      administrative: {
+        title: 'Administrativo:',
+        email: 'f297adm@cps.sp.gov.br'
+      },
+      academic: {
+        title: 'Acadêmico:',
+        email: 'f297acad@cps.sp.gov.br'
+      }
     },
 
     numberPhone:{
-      numberOne: 'Telefone 1: (16) 3384-5847',
-      numberTwo: 'Telefone 2: (16) 2016-2694'
+      numberOne: {
+        title: 'Telefone 1:',
+        number: '(16) 3384-5847'
+      },
+      numberTwo: {
+        title: 'Telefone 2:',
+        number: '(16) 2016-2694'
+      }
     },
 
     copyright: '© Fatec Matão 2021 - Todos os direitos reservados.'
