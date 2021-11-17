@@ -14,22 +14,22 @@ export default {
 
   pages: {
     home: {
-      title: "Ei estudante, <br /> venha ser um <br /> <span>#Fatecano!</span>",
-      titleDesc: 'A <span>Fatec Matão</span> oferece <span>cursos superiores</span> <br /> de qualidade, em diferentes áreas <br /> do conhecimento.',
+      title: "Ei estudante, venha ser um #Fatecano!",
+      titleDesc: 'A Fatec Matão oferece cursos superiores de qualidade, em diferentes áreas do conhecimento.',
       entranceExamButton: 'Vestibular',
       contactButton: 'Contato',
 
       objectives: 'Objetivos',
-      objectivesDesc: 'Conheça um pouco de nossa conduta, <br /> em relação ao nosso ensino',
+      objectivesDesc: 'Conheça um pouco de nossa conduta,em relação ao nosso ensino',
       graduation: 'Graduação',
-      graduationDesc: 'Formar profissionais <br /> em diversas áreas do <br /> conhecimento',
+      graduationDesc: 'Formar profissionais em diversas áreas do conhecimento',
       knowledge: 'Conhecimento',
-      knowledgeDesc: 'Estimular continuamente <br /> o conhecimento <br /> tecnológico',
+      knowledgeDesc: 'Estimular continuamente o conhecimento tecnológico',
       research: 'Pesquisa',
-      researchDesc: 'Produzir o <br /> desenvolvimento <br /> científico',
+      researchDesc: 'Produzir o desenvolvimento científico',
 
       news: 'Notícias',
-      newsDesc: 'Acompanhe algumas notícias <br /> sobre nossa instituição',
+      newsDesc: 'Acompanhe algumas notícias sobre nossa instituição',
       newsTitleOne: 'Fatec Matão - Projetando o fututo (YouTube)',
       newsDateOne: '13/09/2021',
       newsTitleTwo: 'Câmara aprova doações de áreas para Senai e Fatec',
@@ -64,8 +64,10 @@ export default {
       enterName: 'Digite seu nome',
       question: 'Qual sua duvida ?',
       send: 'Enviar',
-      clear: 'Limpar'
-
+      clear: 'Limpar',
+      NoticeForm1: 'Por favor digite seu nome!',
+      NoticeForm2: 'Por favor utilize um e-mail valido!',
+      NoticeForm3: 'Por favor, qual sua duvida ?'
     }
   },
 

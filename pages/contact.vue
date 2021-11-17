@@ -9,9 +9,10 @@
       ></b-img>
     </div>
     <h1>
-      Acompanhe a
+      
       <strong
-        >Fatec Matão:
+        >
+        {{ $t('pages.contact.socialNetworks') }}
         <a href="https://www.facebook.com/fatecmatao">
           <img src="../static/icons/icons8-facebook.svg" alt="Facebook" />
         </a>
@@ -29,10 +30,10 @@
     <hr />
     <div class="avisos">
       <div class="textAvisos">
-        <p class="p1">Devido a pandemia estamos em teletrabalho</p>
-        <p class="p1">Não atendemos por telefone, encaminhe um e-mail para:</p>
+        <p class="p1">{{ $t('pages.contact.notice') }}</p>
+        <p class="p1">{{ $t('pages.contact.notice2') }}</p>
         <p class="p3" v-for="(email, index) in emailItems" :key="index">
-          {{ email.label }} {{ email.email }}
+          <strong>{{ $t('footer.email.direction.title') }} </strong>{{ $t('footer.email.direction.email') }}
         </p>
       </div>
     </div>
@@ -44,35 +45,34 @@
       <!-- <div class="art"></div> -->
       <form @submit.prevent="send" class="container-form">
         
+          <span>{{ $t('pages.contact.name') }}</span>
           <input
             v-model="$v.name.$model"
-            placeholder="Nome"
             :class="{ error: $v.name.$error }"
             class=".color-input input"
           /><br />
-          <p v-if="$v.name.$error" class="error">Por favor digite seu nome!</p>
+          <p v-if="$v.name.$error" class="error">{{ $t('pages.contact.NoticeForm1') }}</p>
         
-
+        <span>{{ $t('pages.contact.email') }}</span>
         <input
           v-model="$v.email.$model"
-          placeholder="E-mail"
           :class="{ error: $v.email.$error }"
           class=".color-input input"
         /><br />
         <p v-if="$v.email.$error" class="error">
-          Por favor utilize um e-mail valido!
+          {{ $t('pages.contact.NoticeForm2') }}
         </p>
 
+        <span>{{ $t('pages.contact.question') }}</span>
         <textarea
           v-model="$v.message.$model"
           cols="30"
           rows="10"
-          placeholder="Conte-nos sua duvida ?"
           :class="{ error: $v.message.$error }"
           class=".color-input input"
         /><br />
         <p v-if="$v.message.$error" class="error">
-          Por favor, qual sua duvida ?
+          {{ $t('pages.contact.NoticeForm3') }}
         </p>
 
         <button type="submit" :disabled="$v.$error" class="button-submit">Enviar</button>
@@ -118,14 +118,6 @@ export default {
           label: "Diretoria:",
           email: "f297dir@cps.sp.gov.br",
         },
-        {
-          label: "Secretaria Administrativa:",
-          email: "f297adm@cps.sp.gov.br",
-        },
-        {
-          label: "Secretaria Acadêmica:",
-          email: "f297acad@cps.sp.gov.br",
-        },
       ],
 
       email: "",
@@ -163,6 +155,10 @@ h1 {
   text-align: center;
 }
 
+span{
+  color: var(--white-color);
+}
+
 strong {
   color: var(--secondary-color);
 }
@@ -188,6 +184,9 @@ hr {
 
 .avisos {
   /* background-color: var(--secondary-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   height: 280px;
   text-align: center;
@@ -327,7 +326,7 @@ textarea.error {
 }
 
 p.error {
-  color: white;
+  color: #ffff3f;
   padding: 15px;
 }
 </style>

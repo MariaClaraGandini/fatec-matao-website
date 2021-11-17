@@ -49,7 +49,7 @@
 
 					<b-col cols="12" lg="4">
 						<div class="m-4">
-							<img src="../static/icons/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> 
+							<img src="../static/images/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> 
 							<h2 class="d-inline-flex mt-2">Valores</h2>
 
 							<p class="mt-3 p-2">Inovação, criatividade, comprometimento,

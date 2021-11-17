@@ -65,8 +65,10 @@ export default {
       enterName: 'Enter your name',
       question: 'What is your question?',
       send: 'Send',
-      clear: 'Clear'
-
+      clear: 'Clear',
+      NoticeForm1: 'Please enter your name!',
+      NoticeForm2: 'Please use a valid e-mail address!',
+      NoticeForm3: 'Please, what is your doubt?'
     }
   },
 
