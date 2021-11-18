@@ -18,6 +18,9 @@
           <p class="description">
             {{ $t("pages.courses.bigText") }} <br />
             {{ $t("pages.courses.bigText1") }} <br />
+             {{ $t("pages.courses.bigText2") }} <br />
+      {{ $t("pages.courses.bigText3") }} <br />
+            {{ $t("pages.courses.bigText4") }} <br />
             {{ $t("pages.courses.textDuration1") }} <br />
             {{ $t("pages.courses.textPeriod") }} <br />
             {{ $t("pages.courses.textVacancies") }} <br />
