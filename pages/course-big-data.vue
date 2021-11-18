@@ -1,32 +1,29 @@
 <template>
   <main>
     <b-card class="form-card">
-      <b-card-text class="curses-style"> Big Data no Agronegócio </b-card-text>
+      <b-card-text class="curses-style">
+        {{ $t("pages.courses.textBig") }}
+      </b-card-text>
     </b-card>
 
     <b-container class="py-4">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Áreas de Atuação</h2>
+          <h2 class="subtitle-style">
+            {{ $t("pages.courses.textArea") }}
+          </h2>
 
           <hr class="hr-curses mt-3" />
 
           <p class="description">
-            <br />O Tecnólogo em Big Data no Agronegócio, desenvolve softwares,
-            aborda matérias fundamentais como matemática, inglês, física,
-            biologia , informática, agricultura e administração.<br />
-            O aluno vai estar apto para gerar dados de negócios agrícolas,
-            implementar banco de dados e configurar redes de sensores. <br />
-            Na área de informática vai estudar: linguagens de programação,
-            computação em nuvem e banco de dados. <br />
-            Na área de agricultura vai estudar: manejo do solo, irrigação,
-            colheita e noções de plantio. <br />
-            Na área de administração vai estudar: empreendedorismo. além de
-            gerenciar dispositivos de internet das coisas e produzir relatórios.
-            <br />
-            - Duração: 5 semestres. <br />
-            - Período: matutino.<br />
-            - Vagas: 40 vagas por período.
+            {{ $t("pages.courses.bigText") }} <br />
+            {{ $t("pages.courses.bigText1") }} <br />
+             {{ $t("pages.courses.bigText2") }} <br />
+      {{ $t("pages.courses.bigText3") }} <br />
+            {{ $t("pages.courses.bigText4") }} <br />
+            {{ $t("pages.courses.textDuration1") }} <br />
+            {{ $t("pages.courses.textPeriod") }} <br />
+            {{ $t("pages.courses.textVacancies") }} <br />
           </p>
         </b-col>
       </b-row>
@@ -35,14 +32,14 @@
     <b-container class="py-0">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Perfil Do Profissional</h2>
+          <h2 class="subtitle-style">
+            {{ $t("pages.courses.textProfile") }}
+          </h2>
 
           <hr class="hr-curses mt-3" />
 
           <p class="description">
-            O profissional de Big Data no Agronegócio pode atuar em empresas de
-            gestão da produção industrial, automação industrial, e banco de
-            dados, assim como empreender abrindo um comércio.
+            {{ $t("pages.courses.textBig2") }}
           </p>
         </b-col>
       </b-row>

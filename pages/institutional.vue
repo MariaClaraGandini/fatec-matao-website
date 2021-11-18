@@ -4,12 +4,13 @@
 				<b-row>
 					<b-col cols="12">
 						<div>
-							<h1 class= "text-center">Conheça nossa unidade!</h1>
-
+							<h1 class= "text-center">
+								{{ $t('pages.institutional.titleh1') }}
+							</h1>
 							<p class="description text-center">
-							Fatec de Matão foi fundada em outubro de 2018, uma das 73 Unidades de Ensino
-							do Centro Estadual de Educação Tecnlológica Paula Souza, que são distribuidas
-							em 67 municípios paulista.
+							{{ $t('pages.institutional.fondation') }}
+
+							
 							</p>
 						</div>
 					</b-col>
@@ -18,42 +19,45 @@
 					<b-col cols="12" lg="4">
 						<div class="m-4">
 							 <img src="../static/icons/mission.svg" alt="Graduação" width="50" class="mt-n3"> 
-							<h2 class="d-inline-flex pt-2 ">Missão</h2>
+							<h2 class="d-inline-flex pt-2 ">{{ $t('pages.institutional.mission') }}</h2>
 
 						</div>
 						<div>
 
-							<p class="mt-3">
-								Oferecer educação <br>
-								gratuita e de qualidade <br>
-								para formar tecnológos <br>
-								na área da
-								AgroIndústria
+							<p class="mt-3  ml-4 text1">
+								{{ $t('pages.institutional.missiondesc1') }} <br>
+								{{ $t('pages.institutional.missiondesc2') }} 
+
+
+
+								
 							</p>
 						</div>
 					</b-col>
 
 					<b-col cols="12" lg="4">
-						<div class="m-4">
+						<div class="m-4 mr-4">
 							 <img src="../static/icons/vision.svg" alt="Graduação" width="50"> 
-							<h2 class="d-inline-flex pt-2">Visão</h2>
+							<h2 class="d-inline-flex pt-2">{{ $t('pages.institutional.vision') }}</h2>
 
 							<p class="mt-3">
-							Consolidar-se como <br>
-							referência nacional na <br>
-							formação e capacitação <br>
-							profissional.
+							{{ $t('pages.institutional.visiondesc') }} 
+						
 							</p>
 						</div>
 					</b-col>
 
 					<b-col cols="12" lg="4">
-						<div class="m-4">
-							<img src="../static/images/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n2"> 
-							<h2 class="d-inline-flex mt-2">Valores</h2>
+						<div class="m-4 mr-5">
+							<img src="../static/images/value.png" alt="Valores da Fatec Matão" width="50" class="mt-n3"> 
+							<h2 class="d-inline-flex mt-2 mr-3">{{ $t('pages.institutional.values') }}</h2>
 
-							<p class="mt-3 p-2">Inovação, criatividade, comprometimento,
-							postura ética, desenvolvimento humano e sustentabilidade.
+							<p class="mt-2 mr-5 p-2 text2">
+							{{ $t('pages.institutional.valuesdesc1') }} <br>
+							{{ $t('pages.institutional.valuesdesc2') }} 
+					
+
+							
 							</p>
 						</div>
 					</b-col>
@@ -129,4 +133,12 @@ h1 {
 p {
   font-size: 1.25rem;
 }
+.text1{
+	width: 85%;
+}
+.text2{
+	width: 107%;
+}
+
+
 </style>

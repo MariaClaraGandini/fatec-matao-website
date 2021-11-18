@@ -1,27 +1,26 @@
 <template>
   <main>
     <b-card class="form-card">
-      <b-card-text class="curses-style"> Análise de Processos Agroindustriais </b-card-text>
+      <b-card-text class="curses-style">
+        {{ $t("pages.courses.textAgro") }}
+      </b-card-text>
     </b-card>
 
     <b-container class="py-4">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Áreas de Atuação</h2>
+          <h2 class="subtitle-style">
+            {{ $t("pages.courses.textArea") }}
+          </h2>
 
           <hr class="hr-curses mt-3" />
 
           <p class="description">
-           O Tecnólogo em Análise de Processos Agroindustriais, desenvolve
-            processos agroindustriais, de trabalho e fabricação.
-            aborda matérias fundamentais como gestão, automação, produção
-            industrial, informática e ciências exatas. <br />
-            O aluno vai estar apto para redesenhar e inovar processos, aprender
-            conceito de fábricas inteligentes e manufatura avançada 
-            também pode trabalhar juntando a automação, produção e informática. <br />
-            - Duração: 6 semestres. <br />
-            - Período: matutino e noturno.<br />
-            - Vagas: 40 vagas por período.
+            {{ $t("pages.courses.agroText") }} <br />
+            {{ $t("pages.courses.agroText1") }} <br />
+            {{ $t("pages.courses.textDuration1") }} <br />
+            {{ $t("pages.courses.textPeriod1") }} <br />
+            {{ $t("pages.courses.textVacancies") }} <br />
           </p>
         </b-col>
       </b-row>
@@ -30,16 +29,15 @@
     <b-container class="py-0">
       <b-row class="text-center">
         <b-col cols="12">
-          <h2 class="subtitle-style">Perfil Do Profissional</h2>
+          <h2 class="subtitle-style">
+            {{ $t("pages.courses.textProfile") }}
+          </h2>
 
           <hr class="hr-curses mt-3" />
 
           <p class="description">
-            O profissional de Análise de Processos Agroindustriais pode atuar em
-            empresas de gestão da produção industrial, automação industrial, e
-            banco de dados, assim como empreender abrindo um comércio.
+            {{ $t("pages.courses.textAgro2") }}
           </p>
-          
         </b-col>
       </b-row>
     </b-container>
@@ -59,15 +57,20 @@ export default {
       title: "Fatec Matão | Cursos",
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: ' O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos!'
+          hid: "description",
+          name: "description",
+          content:
+            " O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos!",
         },
         // Open Graph
-        { property: 'og:title', content: 'Fatec Matão | Cursos' },
-        { property: 'og:site_name', content: 'Fatec Matão | Cursos' },
-        { property: 'og:description', content: ' O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos!' }
-      ]
+        { property: "og:title", content: "Fatec Matão | Cursos" },
+        { property: "og:site_name", content: "Fatec Matão | Cursos" },
+        {
+          property: "og:description",
+          content:
+            " O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos!",
+        },
+      ],
     };
   },
   methods: {
@@ -124,3 +127,4 @@ a.link-one {
   padding: 5px 35px;
 }
 </style>
+

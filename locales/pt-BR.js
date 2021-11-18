@@ -38,17 +38,63 @@ export default {
       newsDateThree: '23/07/2021',
       accessButton: 'Acessar',
     },
+    
+       courses: {
+      titleGet: "Conheça nossos cursos superiores",
+      titleStudy: "Estude em uma faculdade pública de qualidade e credibilidade.",
+      textFood: "Alimentos",
+      textAgro: "Análise de Processos Agroindustriais",
+      textBig: "Big Data no Agronegócio",
+      textGet: "Saiba mais",
+      textArea: "Área de Atuação",
+      textProfile: "Perfil Do Profissional",
+      textDuration: "- Duração: 6 semestres.",
+      textDuration1: "- Duração: 5 semestres.",
+      textPeriod: "- Período: matutino e noturno.",
+      textPeriod1: "- Período: matutino.",
+      textVacancies: "- Vagas: 40 vagas por período.",
+      foodText:
+        "O Tecnólogo em Alimentos, desenvolve tecnologia para produtos cárneos, lácteos, frutas, fermentados e destilados, aborda matérias fundamentais como química, bioquímica e nutrição, além de compreender todo o processo industrial, de embalagem e conserva.",
+      foodText1:
+        "O aluno vai estar apto para planejar e gerenciar uma equipe, definir o tempo de exposição do alimento, aprender boas práticas de fabricação como: vestimenta, equipamento e higienização correta, também pode atuar em laboratórios, pesquisando características, matérias-primas e produtos.",
+      bigText:
+        "O Tecnólogo em Big Data no Agronegócio, desenvolve softwares, aborda matérias fundamentais como matemática, inglês, física, biologia , informática, agricultura e administração.",
+      bigText1:
+        "O aluno vai estar apto para gerar dados de negócios agrícolas, implementar banco de dados e configurar redes de sensores.",
+      agroText:
+        "O Tecnólogo em Análise de Processos Agroindustriais, desenvolve processos agroindustriais, de trabalho e fabricação, aborda matérias fundamentais como gestão, automação, produção industrial, informática e ciências exatas.",
+      agroText1:
+        "O aluno vai estar apto para redesenhar e inovar processos, aprender conceito de fábricas inteligentes e manufatura avançada também pode trabalhar juntando a automação, produção e informática.",
+      textAgro2:
+        " O profissional de Análise de Processos Agroindustriais pode atuar em empresas de gestão da produção industrial, automação industrial, e banco de dados, assim como empreender abrindo um comércio.",
+      textBig2:
+        "O profissional de Big Data no Agronegócio pode atuar em empresas de gestão da produção industrial, automação industrial, e banco de dados, assim como empreender abrindo um comércio.",
+      textFood2:
+     "O profissional de Alimentos pode atuar em redes de supermercados, usinas de cana-de-açúcar, fábricas de conserva, frigoríficos, indústrias alimentícias, assim como empreender abrindo um comércio.",
+    bigText2:"Na área de informática vai estudar: linguagens de programação, computação em nuvem e banco de dados.",
+     bigText3:" Na área de agricultura vai estudar: manejo do solo, irrigação, colheita e noções de plantio.",
+     bigText4:"Na área de administração vai estudar: empreendedorismo. além de gerenciar dispositivos de internet das coisas e produzir relatórios.",
 
-    courses: {
-
-    },
+       
+       
+       },
 
     services: {
 
     },
 
     institutional: {
-
+      titleh1: 'Conheça nossa unidade!',
+      fondation: 'Fatec de Matão foi fundada em outubro de 2018, uma das 73 Unidades de Ensino do Centro Estadual de Educação Tecnlológica Paula Souza, que são distribuidas em 67 municípios paulista.',
+      mission:'Missão',
+      missiondesc1: 'Oferecer educação gratuita ', 
+      missiondesc2:'e de qualidade para formar tecnológos na área da AgroIndústria',
+      vision: 'Visão',
+      visiondesc:'Consolidar-se como referência nacional na formação e capacitação profissional.',
+      values:'Valores',
+      valuesdesc1:'Inovação, criatividade, comprometimento, postura ética, desenvolvimento humano e sustentabilidade',
+      valuesdesc2:'',
+     
     },
 
     contact: {

@@ -9,10 +9,8 @@
       ></b-img>
     </div>
     <h1>
-      
-      <strong
-        >
-        {{ $t('pages.contact.socialNetworks') }}
+      <strong>
+        {{ $t("pages.contact.socialNetworks") }}
         <a href="https://www.facebook.com/fatecmatao">
           <img src="../static/icons/icons8-facebook.svg" alt="Facebook" />
         </a>
@@ -30,10 +28,11 @@
     <hr />
     <div class="avisos">
       <div class="textAvisos">
-        <p class="p1">{{ $t('pages.contact.notice') }}</p>
-        <p class="p1">{{ $t('pages.contact.notice2') }}</p>
+        <p class="p1">{{ $t("pages.contact.notice") }}</p>
+        <p class="p1">{{ $t("pages.contact.notice2") }}</p>
         <p class="p3" v-for="(email, index) in emailItems" :key="index">
-          <strong>{{ $t('footer.email.direction.title') }} </strong>{{ $t('footer.email.direction.email') }}
+          <strong>{{ $t("footer.email.direction.title") }} </strong
+          >{{ $t("footer.email.direction.email") }}
         </p>
       </div>
     </div>
@@ -41,29 +40,30 @@
 
     <!-- Form -->
 
-    <div >
+    <div>
       <!-- <div class="art"></div> -->
       <form @submit.prevent="send" class="container-form">
-        
-          <span>{{ $t('pages.contact.name') }}</span>
-          <input
-            v-model="$v.name.$model"
-            :class="{ error: $v.name.$error }"
-            class=".color-input input"
-          /><br />
-          <p v-if="$v.name.$error" class="error">{{ $t('pages.contact.NoticeForm1') }}</p>
-        
-        <span>{{ $t('pages.contact.email') }}</span>
+        <span>{{ $t("pages.contact.name") }}</span>
+        <input
+          v-model="$v.name.$model"
+          :class="{ error: $v.name.$error }"
+          class=".color-input input"
+        /><br />
+        <p v-if="$v.name.$error" class="error">
+          {{ $t("pages.contact.NoticeForm1") }}
+        </p>
+
+        <span>{{ $t("pages.contact.email") }}</span>
         <input
           v-model="$v.email.$model"
           :class="{ error: $v.email.$error }"
           class=".color-input input"
         /><br />
         <p v-if="$v.email.$error" class="error">
-          {{ $t('pages.contact.NoticeForm2') }}
+          {{ $t("pages.contact.NoticeForm2") }}
         </p>
 
-        <span>{{ $t('pages.contact.question') }}</span>
+        <span>{{ $t("pages.contact.question") }}</span>
         <textarea
           v-model="$v.message.$model"
           cols="30"
@@ -72,15 +72,16 @@
           class=".color-input input"
         /><br />
         <p v-if="$v.message.$error" class="error">
-          {{ $t('pages.contact.NoticeForm3') }}
+          {{ $t("pages.contact.NoticeForm3") }}
         </p>
 
-        <button type="submit" :disabled="$v.$error" class="button-submit">Enviar</button>
+        <button type="submit" :disabled="$v.$error" class="button-submit">
+          {{ $t("pages.contact.send") }}
+        </button>
       </form>
     </div>
   </main>
 </template>
-
 <script>
 import { validationMixin } from "vuelidate";
 import { required, email, minLength } from "vuelidate/lib/validators";
@@ -138,6 +139,7 @@ export default {
       this.email = "";
       this.message = "";
       this.$v.$reset();
+      this.$swal('Sucesso','Mensagem enviada!', 'success');
     },
   },
 
@@ -148,14 +150,13 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 h1 {
   margin-top: 15px;
   text-align: center;
 }
 
-span{
+span {
   color: var(--white-color);
 }
 
@@ -233,7 +234,7 @@ hr {
   align-items: center;
 }
 
-.input-container{
+.input-container {
   width: 90%;
 }
 
