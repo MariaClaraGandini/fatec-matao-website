@@ -72,7 +72,11 @@ export default {
       textAgro2:
         " The professional in Agro-industrial Process Analysis can work in industrial production management companies, industrial automation, and database, as well as enterprising by opening a trade.",
       textFood2:
-        "The Food Professional can work in supermarket chains, sugar cane mills, canning factories, meat packing plants, food industries, as well as in entrepreneurship by opening a business."
+        "The Food Professional can work in supermarket chains, sugar cane mills, canning factories, meat packing plants, food industries, as well as in entrepreneurship by opening a business.",
+    bigText2: "In the area of information technology you will study: programming languages, cloud computing, and databases.",
+     bigText3: " In the agriculture area he will study: soil management, irrigation, harvesting, and planting notions.",
+     bigText4: "In the administration area he will study: entrepreneurship. managing internet of things devices and producing reports.",
+      
     },
 
     services: {
