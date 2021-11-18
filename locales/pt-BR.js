@@ -70,8 +70,14 @@ export default {
       textBig2:
         "O profissional de Big Data no Agronegócio pode atuar em empresas de gestão da produção industrial, automação industrial, e banco de dados, assim como empreender abrindo um comércio.",
       textFood2:
-     "O profissional de Alimentos pode atuar em redes de supermercados, usinas de cana-de-açúcar, fábricas de conserva, frigoríficos, indústrias alimentícias, assim como empreender abrindo um comércio."
-    },
+     "O profissional de Alimentos pode atuar em redes de supermercados, usinas de cana-de-açúcar, fábricas de conserva, frigoríficos, indústrias alimentícias, assim como empreender abrindo um comércio.",
+    bigText2:"Na área de informática vai estudar: linguagens de programação, computação em nuvem e banco de dados.",
+     bigText3:" Na área de agricultura vai estudar: manejo do solo, irrigação, colheita e noções de plantio.",
+     bigText4:"Na área de administração vai estudar: empreendedorismo. além de gerenciar dispositivos de internet das coisas e produzir relatórios.",
+
+       
+       
+       },
 
     services: {
 
