@@ -47,7 +47,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'vue-sweetalert2/nuxt'
   ],
 
   i18n: {
@@ -69,6 +70,11 @@ export default {
     ],
     langDir: 'locales',
     defaultLocale: 'pt-BR'
+  },
+
+  sweetalert: {
+    confirmButtonColor: '#41b882',
+    cancelButtonColor: '#ff7674'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
