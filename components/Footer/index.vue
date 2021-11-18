@@ -36,9 +36,11 @@
 
             <li v-for="(email, index) in emailItems" :key="index">
               <span class="label-style font-weight-bold">
-				        {{ email.label}}
-			        </span>
-              <span class="content-style">{{ email.email }}</span>
+			    {{ email.label}}
+			  </span>
+              <span class="content-style">
+			    {{ email.email }}
+			  </span>
             </li>
           </ul>
         </b-col>
@@ -54,8 +56,12 @@
             </li>
 
             <li v-for="(contact,index) in contactNumbersItems" :key="index">
-              <span class="label-style font-weight-bold">{{ contact.label }}</span>
-              <span class="content-style">{{ contact.number }}</span>
+              <span class="label-style font-weight-bold">
+				{{ contact.label }}
+			  </span>
+              <span class="content-style">
+				{{ contact.number }}
+			  </span>
             </li>
           </ul>
         </b-col>

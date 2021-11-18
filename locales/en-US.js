@@ -34,7 +34,7 @@ export default {
       newsDateOne: '',
       newsTitleTwo: 'Assembly approves donation of areas to Senai and Fatec',
       newsDateTwo: '',
-      newsTitleThree: 'City Hall presents an area of 21 thousand m² for Fatec installations',
+      newsTitleThree: 'City Hall presents an area of 21 thousand m² for Fatec',
       newsDateThree: '',
       accessButton: 'Access',
     },
