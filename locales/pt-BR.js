@@ -78,6 +78,14 @@ export default {
     },
 
     institutional: {
+      titleh1: 'Conheça nossa unidade!',
+      fondation: 'Fatec de Matão foi fundada em outubro de 2018, uma das 73 Unidades de Ensino do Centro Estadual de Educação Tecnlológica Paula Souza, que são distribuidas em 67 municípios paulista.',
+      mission:'Missão',
+      missiondesc: 'Oferecer educação <br> gratuita e de qualidade <br>para formar tecnológos <br>na área da AgroIndústria',
+      vision: 'Visão',
+      visiondesc:'Consolidar-se como <br> referência nacional na <br> formação e capacitação<br> profissional.',
+      values:'Valores',
+      valuesdesc:'Inovação, criatividade, comprometimento, postura ética, desenvolvimento humano e sustentabilidade.'
 
     },
 
