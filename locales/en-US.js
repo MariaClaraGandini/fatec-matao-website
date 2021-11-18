@@ -84,14 +84,17 @@ export default {
     },
 
     institutional: {
-       titleh1: 'Discover our unit!',
+      titleh1: 'Discover our unit!',
       fondation: 'Fatec de Matão was founded in October 2018, one of the 73 Teaching Units of the Paula Souza State Center for Technological Education, which are distributed in 67 cities in São Paulo.',
       mission:'Mission',
-      missiondesc: 'offer education<br>free and quality <br> to train technologists <br> in the area of ​​Agroindustry',
+      missiondesc1: 'Offer education free and quality to train technologists in the area of ​​Agroindustry',
+      missiondesc2: '',
       vision: 'Vision',
-      visiondesc:'consolidate as<br> national reference in<br>education and training<br>professional.',
+      visiondesc:'consolidate as national reference in education and training professional',
+      visiondesc1:'and training professional.',
       values:'Values',
-      valuesdesc:'Innovation, creativity, <br> commitment, ethical posture, human development and sustainability.',
+      valuesdesc1:'Innovation, creativity,',
+      valuesdesc2:'commitment, posture ethical, human development and sustainability ',
 
     },
 
