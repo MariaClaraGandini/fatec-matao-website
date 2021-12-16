@@ -9,7 +9,7 @@ Fatec Matão's website is a non-profit project, developed by Fatec Taquaritinga 
 - HTML 5
 - Bootstrap 4.6
 - Vue.js 2
-- Nuxt.js 2.15.8
+- Nuxt.js 2
 
 ### Integrations
 - **BootstrapVue**: With BootstrapVue you can build responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library. (https://bootstrap-vue.org/)
